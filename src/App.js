@@ -115,7 +115,7 @@ function App() {
             
           </table>
         </div>
-        <h4>Our art assets reset on a bi-weekly basis.</h4>
+        <h4>Our art asset discounts change on a bi-weekly basis.</h4>
 
         
       </div>
