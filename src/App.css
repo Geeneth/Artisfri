@@ -196,3 +196,17 @@ nav ul li a:hover {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* Database CSS Styling */
+/* .database{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.database-card {
+  margin-left: 1%;
+  margin-right: 10%;
+ } */

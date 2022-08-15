@@ -40,10 +40,14 @@ function App() {
 
       <div id="sections">
         <h1 className="assets-section-title">ASSETS</h1>
-         <img src="images/collection-banner.svg" className="collection-banner" alt="logo" /> 
+        <img
+          src="images/collection-banner.svg"
+          className="collection-banner"
+          alt="logo"
+        />
         <div className="assets-table-container">
           <table className="assets-table">
-          <tr>
+            <tr>
               <td>
                 <AssetVerticalCard
                   title="Chair"
@@ -111,17 +115,15 @@ function App() {
                 />
               </td>
             </tr>
-        
-            
           </table>
         </div>
         <h4>Our art asset discounts change on a bi-weekly basis.</h4>
-
-        
       </div>
       <div id="about-us">
-          <AboutUs />
-        </div>
+        <AboutUs />
+      </div>
+
+      
     </div>
   );
 }
