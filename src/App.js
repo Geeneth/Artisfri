@@ -3,6 +3,7 @@ import "./App.css";
 import AssetCard from "./components/asset-card";
 import AssetVerticalCard from "./components/asset-vertical-card";
 import AboutUs from "./components/about-us";
+import { products } from "./components/database-data";
 
 function App() {
   return (
@@ -115,6 +116,19 @@ function App() {
                 />
               </td>
             </tr>
+            <tr>
+              {/* For every prodcut in the database-data create a <td> element */}
+              {products.map((product) => (
+                <td>
+                  <AssetCard
+                    title={product.title}
+                    description={product.description}
+                    image={product.image}
+                    links={product.links}
+                  />
+                </td>
+              ))}
+            </tr>
           </table>
         </div>
         <h4>Our art asset discounts change on a bi-weekly basis.</h4>
@@ -122,8 +136,6 @@ function App() {
       <div id="about-us">
         <AboutUs />
       </div>
-
-      
     </div>
   );
 }
