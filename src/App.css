@@ -128,7 +128,7 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-#sections {
+#new-arrivals {
   margin-top: 30px;
   color: black;
   padding: 1.5% 5% 5% 5%;
@@ -139,7 +139,26 @@ nav ul li a:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-#sections h4{
+.sections2 {
+  margin-top: 30px;
+  color: black;
+  padding: 1.5% 5% 5% 5%;
+  /*background: #fff;*/
+  /* background: rgb(250, 250, 250, 0.8); */
+  background: rgb(250, 250, 250);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+
+.asset-card-block{
+  width: 25%;
+}
+
+#new-arrivals h4{
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;

@@ -4,9 +4,14 @@ import AssetCard from "./components/asset-card";
 import AssetVerticalCard from "./components/asset-vertical-card";
 import AboutUs from "./components/about-us";
 import { products } from "./components/database-data";
+import { arrivals } from "./components/new-arrivals";
+import Database from "./components/page-components/database";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  
   return (
+    <Router>
     <div className="App" id="app">
       <div className="nav-bar">
         <nav>
@@ -39,104 +44,53 @@ function App() {
         <img src="images/home-image.svg" className="App-logo" alt="logo" />
       </div>
 
-      <div id="sections">
-        <h1 className="assets-section-title">ASSETS</h1>
-        <img
+      <div id="new-arrivals">
+        <h1 className="assets-section-title">NEW ARRIVALS</h1>
+        {/* <img
           src="images/collection-banner.svg"
           className="collection-banner"
           alt="logo"
-        />
+        /> */}
         <div className="assets-table-container">
-          <table className="assets-table">
-            <tr>
-              <td>
-                <AssetVerticalCard
-                  title="Chair"
-                  description="This is a very basic 3D chair to add to your collection. It can serve very well in creating a set of a room."
-                  image="./images/chair.svg"
-                  links={["link", "link2"]}
-                />
-              </td>
-              <td>
-                <AssetVerticalCard
-                  title="Chair"
-                  description="This is a very basic 3D chair to add to your collection. It can serve very well in creating a set of a room."
-                  image="./images/chair.svg"
-                  links={["link", "link2"]}
-                />
-              </td>
-              <td>
-                <AssetVerticalCard
-                  title="Chair"
-                  description="This is a very basic 3D chair to add to your collection. It can serve very well in creating a set of a room."
-                  image="./images/chair.svg"
-                  links={["link", "link2"]}
-                />
-              </td>
-              <td>
-                <AssetVerticalCard
-                  title="Project 1"
-                  description="This is a very basic 3D chair to add to your collection. It can serve very well in creating a set of a room."
-                  image="./images/chair.svg"
-                  links={["link", "link2"]}
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <AssetVerticalCard
-                  title="Chair"
-                  description="This is a very basic 3D chair to add to your collection. It can serve very well in creating a set of a room."
-                  image="./images/chair.svg"
-                  links={["link", "link2"]}
-                />
-              </td>
-              <td>
-                <AssetVerticalCard
-                  title="Chair"
-                  description="This is a very basic 3D chair to add to your collection. It can serve very well in creating a set of a room."
-                  image="./images/chair.svg"
-                  links={["link", "link2"]}
-                />
-              </td>
-              <td>
-                <AssetVerticalCard
-                  title="Chair"
-                  description="This is a very basic 3D chair to add to your collection. It can serve very well in creating a set of a room."
-                  image="./images/chair.svg"
-                  links={["link", "link2"]}
-                />
-              </td>
-              <td>
-                <AssetVerticalCard
-                  title="Chair"
-                  description="This is a very basic 3D chair to add to your collection. It can serve very well in creating a set of a room."
-                  image="./images/chair.svg"
-                  links={["link", "link2"]}
-                />
-              </td>
-            </tr>
-            <tr>
-              {/* For every prodcut in the database-data create a <td> element */}
-              {products.map((product) => (
-                <td>
-                  <AssetCard
-                    title={product.title}
-                    description={product.description}
-                    image={product.image}
-                    links={product.links}
-                  />
-                </td>
-              ))}
-            </tr>
-          </table>
+        <div className="sections2">
+      {/* Map through products array and create cards */}
+      {products.map((arrivals,index) => (
+        <div className="asset-card-block">
+          <AssetCard
+            title={arrivals.title}
+            description={arrivals.description}
+            image={arrivals.image}
+            links={arrivals.links}
+          />
+        </div>
+        ))}
+        </div>
+         
         </div>
         <h4>Our art asset discounts change on a bi-weekly basis.</h4>
       </div>
       <div id="about-us">
         <AboutUs />
       </div>
+      
+      <div className="sections2">
+      <h1 className="assets-section-title">DATABASE</h1>
+      {/* Map through products array and create cards */}
+      {products.map((product,index) => (
+        <div className="asset-card-block">
+          <AssetCard
+            title={product.title}
+            description={product.description}
+            image={product.image}
+            links={product.links}
+          />
+        </div>
+        ))}
+        </div>
+
+
     </div>
+    </Router>
   );
 }
 
