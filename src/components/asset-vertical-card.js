@@ -17,11 +17,11 @@ function AssetVerticalCard(props) {
       <h3 className="asset-title">{props.title}</h3>
         <p className="asset-description">{props.description}</p>
 
-      <div>
+      <div className="links-area">
         <ul className="asset-links">
-          {props.links.map((link) => (
+          {props.links.map((link,index) => (
             <li>
-              <a href={link}>{link}</a>
+              <a href={link}>{"Download"}</a>
             </li>
           ))}
         </ul>

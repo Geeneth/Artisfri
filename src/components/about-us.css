@@ -1,8 +1,9 @@
-.about-us{
+.about-us {
+  font-size: 1.2rem;
   color: whitesmoke;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-us-title {
@@ -14,5 +15,22 @@
 }
 
 .about-us-content {
+  text-align: center;
+}
+
+.info-tiles {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 5px solid whitesmoke;
+  border-radius: 10px;
+  padding: 2% 5% 2% 5%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-tiles p {
+  width: 50%;
   text-align: center;
 }
