@@ -34,9 +34,8 @@ function App() {
       </div>
       <div className="flex-box">
         <div className="home-headers">
-          <h1>FREE</h1>
-          <h1>ART</h1>
-          <h1>ASSETS</h1>
+          <h1>AFFORDABLE</h1>
+          <h1>ART ASSETS</h1>
           <a href="#new-arrivals">
             <button className="btn">Get Them Now!</button>
           </a>
@@ -72,6 +71,7 @@ function App() {
       <div id="database" className="sections2">
       {/* <h1 className="assets-section-title">DATABASE</h1> */}
       {/* Map through products array and create cards */}
+      
       {products.map((product,index) => (
         <div className="vertical-asset-card-block">
           <AssetVerticalCard

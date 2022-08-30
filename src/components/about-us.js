@@ -4,15 +4,15 @@ function AboutUs() {
   return (
     <div className="about-us">
       <h3 className="about-us-title">ABOUT US</h3>
-      <p className="about-us-content">
-        Artisfri is a platform for artists and creators to obtain affordable art
+      <h3 className="about-us-content">
+        Artisfri is a platform for artists and creators to purchase affordable art
         assets to use in their projects. What sets us apart is that we do not
         use the system of all users being able to upload assets. We have a panel
         of certified artists that create the models, this assures consistent
         quality and effective customer support. We are far from reaching our
         full potential yet, however, we are working hard to get there and
         therefore our website will constantly be updated.
-      </p>
+      </h3>
 
       <div className="about-us-info">
         <div id="file-format-info" className="info-tiles">
@@ -32,7 +32,7 @@ function AboutUs() {
           />
           <p>
             Our models use a generally low amount of polygon. This is done to
-            keep our products affordable and useable for all users. It also
+            keep our products affordable and effortlessly useable. It also
             allows our artits to produce a larger number of assets.
           </p>
           <h3 className="about-us-subtitle">POLYGONS</h3>

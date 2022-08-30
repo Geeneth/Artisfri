@@ -2,28 +2,27 @@ export const products = [
   {
     title: "Table",
     description:
-      "This is a very basic table to add to your collection. It can serve very well in creating a set of a room.",
+      "This is a great table to add to your collection. It can serve very well in creating a set of a room.",
     image: "./assets/amantha/images/Table_Furniture.jpg",
     links: ["./assets/amantha/Table_Furniture.fbx"],
   },
   {
     title: "TV Stand",
     description:
-      "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
+      "A TV Stand is a great piece of furniture to add to your 3D home environment. It can be used to create a set of a room.",
     image: "./assets/amantha/images/TV_Stand.png",
     links: ["./assets/amantha/TV_Stand_Furniture.fbx"],
   },
   {
     title: "Wooden Chair",
-    description:
-      "A very basic wooden chair to add to your 3D environment. ",
+    description: "A basic wooden chair to add to your 3D environment. ",
     image: "./assets/amantha/images/Wooden_Chair_Furniture.png",
     links: ["./assets/amantha/Wooden_Chair_Furniture.fbx"],
   },
   {
-    title: "Wooden Chair",
+    title: "Chair",
     description:
-      "A very basic chair to add to your 3D environment. Works well with other low poly assets.",
+      "A basic chair to add to your 3D environment.",
     image: "./assets/amantha/images/Chair_Furniture.png",
     links: ["./assets/amantha/Chair_Furniture.fbx"],
   },
@@ -65,23 +64,30 @@ export const products = [
   {
     title: "Large Grass",
     description:
-      "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
+      "A very basic model of grass to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/grass-large.png",
     links: ["./assets/dimantha/grass-large.fbx"],
   },
   {
     title: "Medium Grass",
     description:
-      "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
+    "A very basic model of grass to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/grass-medium.png",
     links: ["./assets/dimantha/grass-medium.fbx"],
   },
   {
     title: "Small Grass",
     description:
-      "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
+    "A very basic model of grass to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/grass-small.png",
     links: ["./assets/dimantha/grass-small.fbx"],
+  },
+  {
+    title: "Pair of Rocks",
+    description:
+      "A pair of low poly rocks to add to your 3D environment. Works well with other low poly assets.",
+    image: "./assets/dimantha/images/rocks.png",
+    links: ["./assets/dimantha/rocks.fbx"],
   },
 ];
 
