@@ -35,7 +35,8 @@ function App() {
       <div className="flex-box">
         <div className="home-headers">
           <h1>AFFORDABLE</h1>
-          <h1>ART ASSETS</h1>
+          <h1>ART</h1>
+          <h1>ASSETS</h1>
           <a href="#new-arrivals">
             <button className="btn">Get Them Now!</button>
           </a>

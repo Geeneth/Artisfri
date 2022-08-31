@@ -19,6 +19,7 @@ function AssetVerticalCard(props) {
 
       <div className="links-area">
         <ul className="asset-links">
+          
           {props.links.map((link,index) => (
             <li>
               <a href={link}>{"Download"}</a>

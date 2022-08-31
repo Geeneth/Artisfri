@@ -18,7 +18,7 @@ function AboutUs() {
         <div id="file-format-info" className="info-tiles">
           <h3 className="about-us-subtitle">FILE FORMAT</h3>
           <p>
-            We have decided to use the file format FBX when presenting our
+            We use the file format FBX when presenting our
             assets. This is a standard file type that most 3D modelling software
             supports.
           </p>
