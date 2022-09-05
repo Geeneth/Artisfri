@@ -58,7 +58,7 @@ function HomePage() {
             {arrivals.map((arrivals, index) => (
               <div className="vertical-asset-card-block">
 
-                {/* passing the props to the vertical asset card component */}
+                {/* Passing the props to the vertical asset card component */}
                 <AssetVerticalCard
                   title={arrivals.title}
                   description={arrivals.description}
@@ -74,6 +74,11 @@ function HomePage() {
       </div>
       <div id="about-us">
         <AboutUs />
+      </div>
+      
+      {/* Footer with socials */}
+      <div id="socials">
+
       </div>
 
     </div>
