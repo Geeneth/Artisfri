@@ -19,7 +19,7 @@ function AssetVerticalCard(props) {
 
       <div className="links-area">
         <div className="asset-links-2">
-          <a id="download-button" href={props.links[0]}>{"Download"}</a>
+          <a id="download-button" href={props.links[0]} download>{"Download"}</a>
         </div>
 
         {/* <ul className="asset-links">
