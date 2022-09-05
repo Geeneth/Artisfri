@@ -1,6 +1,5 @@
 import logo from "./logo.svg";
 import "./components/database.css";
-import AssetCard from "./components/asset-card";
 import AssetVerticalCard from "./components/asset-vertical-card";
 import { products } from "./components/database-data";
 import { arrivals } from "./components/new-arrivals";
@@ -16,6 +15,8 @@ function Database() {
       </h3>
 
       <div className="database-products">
+
+        {/* Mapping through the array of products and creating cards for each*/}
         {products.map((product, index) => (
           <div className="vertical-asset-card-block">
             <AssetVerticalCard

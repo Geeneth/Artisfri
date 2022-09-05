@@ -1,3 +1,5 @@
+//Exporting an array of objects with the data for the new arrivals
+
 export const arrivals = [
   {
     title: "Withered Tree",

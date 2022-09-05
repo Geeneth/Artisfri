@@ -1,3 +1,5 @@
+//Exporting an array of objects with the data for the database
+
 export const products = [
   {
     title: "Table",

@@ -1,5 +1,4 @@
 import logo from "./logo.svg";
-import AssetCard from "./components/asset-card";
 import AssetVerticalCard from "./components/asset-vertical-card";
 import AboutUs from "./components/about-us";
 import { products } from "./components/database-data";
@@ -10,7 +9,7 @@ import Database from "./database";
 
 function App() {
   return (
-    //use react router to create a single page application
+    //Using react router to navigate between pages
     <Router>
       <div className="App" id="app">
         <Routes>
@@ -23,4 +22,3 @@ function App() {
 }
 
 export default App;
-//v=spf1 include:spf.efwd.registrar-servers.com ~all

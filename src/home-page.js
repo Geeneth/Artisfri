@@ -1,6 +1,5 @@
 import logo from "./logo.svg";
 import "./App.css";
-import AssetCard from "./components/asset-card";
 import AssetVerticalCard from "./components/asset-vertical-card";
 import AboutUs from "./components/about-us";
 import { products } from "./components/database-data";
@@ -10,6 +9,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function HomePage() {
   return (
+
+    //Navigation bar
     <div className="App" id="app">
       <div className="nav-bar">
         <nav>
@@ -30,12 +31,16 @@ function HomePage() {
           </ul>
         </nav>
       </div>
+
+      {/* The home headers and image */}
       <div className="flex-box">
         <div className="home-headers">
           <h1>AFFORDABLE</h1>
           <h1>ART</h1>
           <h1>ASSETS</h1>
           <a href="#new-arrivals">
+
+            {/* Button to scroll down to the "New Arrivals" section */}
             <button className="btn">NEW ARRIVALS!</button>
           </a>
         </div>
@@ -48,9 +53,12 @@ function HomePage() {
         </h1>
         <div className="assets-table-container">
           <div className="sections3">
-            {/* Map through products array and create cards */}
+
+            {/* Mapping through the array of new arrivals and creating cards for each*/}
             {arrivals.map((arrivals, index) => (
               <div className="vertical-asset-card-block">
+
+                {/* passing the props to the vertical asset card component */}
                 <AssetVerticalCard
                   title={arrivals.title}
                   description={arrivals.description}
@@ -61,6 +69,7 @@ function HomePage() {
             ))}
           </div>
         </div>
+
         {/* <h4 style={{color: "black"}}>Our art asset discounts change on a bi-weekly basis.</h4> */}
       </div>
       <div id="about-us">
