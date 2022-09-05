@@ -10,23 +10,25 @@ function AssetVerticalCard(props) {
 
   return (
     <div className="asset-item">
-        <div className="asset-image-container">
+      <div className="asset-image-container">
         <img className="asset-image" src={props.image} alt={props.title} />
-        </div>
-        
+      </div>
+
       <h3 className="asset-title">{props.title}</h3>
-        <p className="asset-description">{props.description}</p>
+      <p className="asset-description">{props.description}</p>
 
       <div className="links-area">
-        <ul className="asset-links">
-          
+        <div className="asset-links-2">
+          <a id="download-button" href={props.links[0]}>{"Download"}</a>
+        </div>
+
+        {/* <ul className="asset-links">
           {props.links.map((link,index) => (
             <li>
               <a href={link}>{"Download"}</a>
             </li>
           ))}
-        </ul>
-
+        </ul> */}
       </div>
     </div>
   );
