@@ -11,4 +11,6 @@ Whenever our artists release a new batch of models, they will be displayed in ou
 
 
 ![](read-me-images/new-arrivals.png)
+<sub>New Arrivals Section</sub>
 ![](read-me-images/database.png)
+<sub>Database Page</sub>
