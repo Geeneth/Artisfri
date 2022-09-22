@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
-*{
+* {
   scroll-behavior: smooth;
   margin-top: 0%;
 }
@@ -11,8 +11,8 @@
   display: none;
 }
 
-.App{
-  font-family: 'League-Spartan', sans-serif;
+.App {
+  font-family: "League-Spartan", sans-serif;
   background: linear-gradient(to right, #ff5f6d, #ff8657, #e2911f);
   background-size: 400% 400%;
   animation: change 15s ease-in-out infinite;
@@ -91,7 +91,7 @@ nav ul li a {
   color: whitesmoke;
 }
 
-.btn{
+.btn {
   height: 10%;
   width: 80%;
   background-color: #ffc371;
@@ -107,13 +107,13 @@ nav ul li a {
   color: black;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: whitesmoke;
   transition: 0.3s;
 }
 
 /* Asset Section */
-.collection-banner{
+.collection-banner {
   margin-top: 20px;
   display: block;
   margin-left: auto;
@@ -139,9 +139,9 @@ nav ul li a {
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   display: flex;
-    flex-flow: row wrap;
-    flex-wrap: wrap;
-    flex-direction: row; 
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .sections3 {
@@ -151,16 +151,16 @@ nav ul li a {
   border: #ff8657 solid 5px;
   border-radius: 10px;
   display: flex;
-    flex-flow: row wrap;
-    flex-wrap: wrap;
-    flex-direction: row; 
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.vertical-asset-card-block{
+.vertical-asset-card-block {
   width: 20%;
 }
 
-#new-arrivals h4{
+#new-arrivals h4 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -174,14 +174,14 @@ nav ul li a {
   text-align: center;
 }
 
-.assets-table tr{
+.assets-table tr {
   width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
 }
 
-.assets-table td{
+.assets-table td {
   width: 20%;
   height: 50%;
   align-items: center;
@@ -190,14 +190,14 @@ nav ul li a {
 }
 
 /* Underline Animation */
-nav ul li a {
+nav ul li a, #artists a, #socials a {
   display: inline-block;
   position: relative;
   color: #fff;
 }
 
-nav ul li a:after {
-  content: '';
+nav ul li a:after, #artists a:after, #socials a:after {
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -210,7 +210,49 @@ nav ul li a:after {
   transition: transform 0.25s ease-out;
 }
 
-nav ul li a:hover:after {
+nav ul li a:hover:after, #artists a:hover:after, #socials a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* Footer */
+#footer {
+  margin-top: 30px;
+  color: black;
+  padding: 1.5% 5% 5% 5%;
+  background: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+#socials {
+  text-align: center;
+  padding-top: 1%;
+}
+
+.social-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: black;
+}
+
+#artists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+  border-bottom: #e2911f solid 2px;
+}
+
+/* Underline Animation */
+#artists a, #socials a {
+  color: #000;
+}
+
+#artists a:after, #socials a:after {
+  background-color: #000;
 }

@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function HomePage() {
   return (
-
     //Navigation bar
     <div className="App" id="app">
       <div className="nav-bar">
@@ -23,10 +22,10 @@ function HomePage() {
               <a href="#about-us">About Us</a>
             </li>
             <li>
-              <a href="#">Socials</a>
+              <a href="#">Artists</a>
             </li>
             <li>
-              <a href="#">Artists</a>
+              <a href="#socials">Socials</a>
             </li>
           </ul>
         </nav>
@@ -39,7 +38,6 @@ function HomePage() {
           <h1>ART</h1>
           <h1>ASSETS</h1>
           <a href="#new-arrivals">
-
             {/* Button to scroll down to the "New Arrivals" section */}
             <button className="btn">NEW ARRIVALS!</button>
           </a>
@@ -53,11 +51,9 @@ function HomePage() {
         </h1>
         <div className="assets-table-container">
           <div className="sections3">
-
             {/* Mapping through the array of new arrivals and creating cards for each*/}
             {arrivals.map((arrivals, index) => (
               <div className="vertical-asset-card-block">
-
                 {/* Passing the props to the vertical asset card component */}
                 <AssetVerticalCard
                   title={arrivals.title}
@@ -75,12 +71,40 @@ function HomePage() {
       <div id="about-us">
         <AboutUs />
       </div>
-      
+
       {/* Footer with socials */}
-      <div id="socials">
-
+      <div id="footer">
+        <h2 style={{ marginTop: "2%" }}>Artists</h2>
+        <div id="artists">
+          <a
+            className="social-link"
+            target={"_blank"}
+            href="https://www.linkedin.com/in/amantha-jayasuriya-5a59231ba/"
+          >
+            {" "}
+            Amantha Jayasuriya
+          </a>
+          <a
+            className="social-link"
+            target={"_blank"}
+            href="https://www.linkedin.com/in/dimantha-goonewardena-376b20193/"
+          >
+            {" "}
+            Dimantha Goonerwardena
+          </a>
+        </div>
+        <h2 style={{ marginTop: "5%" }}>Socials</h2>
+        <div id="socials">
+          <a
+            className="social-link"
+            target={"_blank"}
+            href="https://www.linkedin.com/company/artisfri/"
+          >
+            {" "}
+            LinkedIn
+          </a>
+        </div>
       </div>
-
     </div>
   );
 }
