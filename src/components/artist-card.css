@@ -1,0 +1,66 @@
+.artist-image{
+    width: 15%;
+    height: 15%;
+    /* padding-left: 5%; */
+    border-radius: 10px;
+}
+
+.artist-card{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 1% 1% 1% 1%;
+}
+
+.artist-card-info{
+    width: 500%;
+    padding-left: 5%;
+}
+
+.artist-name{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.artist-bio{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* .artist-link{
+    margin-left: 45%;
+} */
+
+.link-image{
+    padding-left: 40%;
+    width: 40%;
+    height: 10%;
+}
+
+
+
+
+
+.team-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.team-section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 5%;
+    border-bottom: #e2911f solid 2px;
+}

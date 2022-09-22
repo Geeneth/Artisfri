@@ -6,6 +6,9 @@ import { products } from "./components/database-data";
 import { arrivals } from "./components/new-arrivals";
 import Database from "./database";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import ArtistCard from "./components/artist-card";
+import { team_info } from "./components/team-info";
+import Team from "./components/team";
 
 function HomePage() {
   return (
@@ -74,36 +77,9 @@ function HomePage() {
 
       {/* Footer with socials */}
       <div id="footer">
-        <h2 style={{ marginTop: "2%" }}>Artists</h2>
-        <div id="artists">
-          <a
-            className="social-link"
-            target={"_blank"}
-            href="https://www.linkedin.com/in/amantha-jayasuriya-5a59231ba/"
-          >
-            {" "}
-            Amantha Jayasuriya
-          </a>
-          <a
-            className="social-link"
-            target={"_blank"}
-            href="https://www.linkedin.com/in/dimantha-goonewardena-376b20193/"
-          >
-            {" "}
-            Dimantha Goonerwardena
-          </a>
-        </div>
-        <h2 style={{ marginTop: "5%" }}>Socials</h2>
-        <div id="socials">
-          <a
-            className="social-link"
-            target={"_blank"}
-            href="https://www.linkedin.com/company/artisfri/"
-          >
-            {" "}
-            LinkedIn
-          </a>
-        </div>
+        <h2 style={{ marginTop: "2%" }}>Team</h2>
+        <Team />
+        <h2 style={{ marginTop: "2%" }}>Socials</h2>
       </div>
     </div>
   );

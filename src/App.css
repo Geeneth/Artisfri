@@ -237,15 +237,10 @@ nav ul li a:hover:after, #artists a:hover:after, #socials a:hover:after {
   color: black;
 }
 
-#artists {
+.team-block{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-bottom: 5%;
-  border-bottom: #e2911f solid 2px;
 }
 
 /* Underline Animation */
