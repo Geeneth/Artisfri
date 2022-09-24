@@ -28,7 +28,7 @@ function HomePage() {
               <a href="#team-section">Team</a>
             </li>
             <li>
-              <a href="#socials">Socials</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -77,9 +77,20 @@ function HomePage() {
 
       {/* Footer with socials */}
       <div id="footer">
-        <h2 style={{ marginTop: "2%" }} id="team-section">Team</h2>
+        <h2 style={{ marginTop: "2%" }} id="team-section">
+          Team
+        </h2>
         <Team />
-        {/* <h2 style={{ marginTop: "2%" }}>Socials</h2> */}
+        <div id="contact">
+          <h2 style={{ marginTop: "3%" }}>Contact Us</h2>
+          {/* email contact info */}
+          <div className="contact-content">
+            <a href="mailto:kulatungegeeneth@gmail.com">
+              <h3>kulatungegeeneth@gmail.com</h3>
+            </a>
+            <h3>+1-514-677-7720</h3>
+          </div>
+        </div>
       </div>
     </div>
   );

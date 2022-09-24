@@ -251,3 +251,15 @@ nav ul li a:hover:after, #artists a:hover:after, #socials a:hover:after {
 #artists a:after, #socials a:after {
   background-color: #000;
 }
+
+.contact-content{
+  margin: 4% 20% 1% 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-content a{
+  text-decoration: none;
+  color: black;
+}

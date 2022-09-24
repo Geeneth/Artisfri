@@ -22,15 +22,6 @@ function Database() {
             <li>
               <Link to="/">Home</Link>
             </li>
-            {/* <li>
-              <a href="#about-us">About Us</a>
-            </li>
-            <li>
-              <a href="#team-section">Team</a>
-            </li>
-            <li>
-              <a href="#socials">Socials</a>
-            </li> */}
           </ul>
         </nav>
       </div>
