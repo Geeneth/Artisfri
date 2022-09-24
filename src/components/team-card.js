@@ -1,6 +1,6 @@
-import "./artist-card.css";
+import "./team-card.css";
 
-function ArtistCard(props) {
+function TeamCard(props) {
   return (
     <div className="artist-card">
       <img className="artist-image" src={props.image} alt={props.name} />
@@ -19,4 +19,4 @@ function ArtistCard(props) {
   );
 }
 
-export default ArtistCard;
+export default TeamCard;

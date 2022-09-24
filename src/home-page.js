@@ -6,7 +6,7 @@ import { products } from "./components/database-data";
 import { arrivals } from "./components/new-arrivals";
 import Database from "./database";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ArtistCard from "./components/artist-card";
+import ArtistCard from "./components/team-card";
 import { team_info } from "./components/team-info";
 import Team from "./components/team";
 
@@ -25,7 +25,7 @@ function HomePage() {
               <a href="#about-us">About Us</a>
             </li>
             <li>
-              <a href="#">Artists</a>
+              <a href="#team-section">Team</a>
             </li>
             <li>
               <a href="#socials">Socials</a>
@@ -77,9 +77,9 @@ function HomePage() {
 
       {/* Footer with socials */}
       <div id="footer">
-        <h2 style={{ marginTop: "2%" }}>Team</h2>
+        <h2 style={{ marginTop: "2%" }} id="team-section">Team</h2>
         <Team />
-        <h2 style={{ marginTop: "2%" }}>Socials</h2>
+        {/* <h2 style={{ marginTop: "2%" }}>Socials</h2> */}
       </div>
     </div>
   );

@@ -1,40 +1,40 @@
-import "./artist-card.css";
-import ArtistCard from "./artist-card";
+import "./team-card.css";
+import TeamCard from "./team-card";
 
 function Team(props) {
   return (
     <div className="team-section">
       <div className="team-block">
-        <ArtistCard
+        <TeamCard
           name={"Geeneth Kulatunge"}
-          bio={"Software Developer for Artisfri. Loves turtles!"}
-          image={"./images/artists/geeneth-kulatunge.jpeg"}
-          link_image={"./images/artists/linkedin-logo.png"}
+          bio={"Founder | Software Developer"}
+          image={"./images/team/geeneth-kulatunge.jpeg"}
+          link_image={"./images/team/linkedin-logo.png"}
           link={"https://www.linkedin.com/in/geeneth-kulatunge-5ab6821b5/"}
         />
-        <ArtistCard
+        {/* <TeamCard
           name={"Geeneth Kulatunge"}
-          bio={"Software Developer for Artisfri. Loves turtles!"}
-          image={"./images/artists/geeneth-kulatunge.jpeg"}
-          link_image={"./images/artists/linkedin-logo.png"}
+          bio={"Software Developer for Artisfri Loves turtles!"}
+          image={"./images/team/geeneth-kulatunge.jpeg"}
+          link_image={"./images/team/linkedin-logo.png"}
           link={"https://www.linkedin.com/in/geeneth-kulatunge-5ab6821b5/"}
-        />
+        /> */}
         
       </div>
       <div className="team-block" style={{paddingTop: "20px"}}>
-        <ArtistCard
-          name={"Geeneth Kulatunge"}
-          bio={"Software Developer for Artisfri. Loves turtles!"}
-          image={"./images/artists/geeneth-kulatunge.jpeg"}
-          link_image={"./images/artists/linkedin-logo.png"}
-          link={"https://www.linkedin.com/in/geeneth-kulatunge-5ab6821b5/"}
+        <TeamCard
+          name={"Amantha Jayasuriya"}
+          bio={"3D Artist | UI/UX Designer"}
+          image={"./images/team/empty-user.png"}
+          link_image={"./images/team/linkedin-logo.png"}
+          link={"https://www.linkedin.com/in/amantha-jayasuriya-5a59231ba/"}
         />
-        <ArtistCard
-          name={"Geeneth Kulatunge"}
-          bio={"Software Developer for Artisfri. Loves turtles!"}
-          image={"./images/artists/geeneth-kulatunge.jpeg"}
-          link_image={"./images/artists/linkedin-logo.png"}
-          link={"https://www.linkedin.com/in/geeneth-kulatunge-5ab6821b5/"}
+        <TeamCard
+          name={"Dimantha Goonewardena"}
+          bio={"3D Artist | Software Developer"}
+          image={"./images/team/empty-user.png"}
+          link_image={"./images/team/linkedin-logo.png"}
+          link={"https://www.linkedin.com/in/dimantha-goonewardena-376b20193/"}
         />
       </div>
     </div>
