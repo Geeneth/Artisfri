@@ -1,25 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 #database-page {
-  background-color: whitesmoke;
-  padding: 1% 0 0 0;
+  background-color: white;
+  padding: 1% 0 1% 0;
+  margin-top: 0%;
 }
 
 .database-products {
   color: black;
   margin-top: 2%;
   padding: 0% 5% 5% 5%;
-  background: whitesmoke;
+  background: white;
   border-radius: 10px;
   display: flex;
   flex-flow: row wrap;
   flex-wrap: wrap;
   flex-direction: row;
-}
-
-.return-home {
-  text-align: center;
-  margin-top: 2%;
 }
 
 #database-return {
@@ -51,3 +47,89 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.list {
+  color: black;
+  margin-top: 1%;
+  padding: 0% 5% 5% 5%;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.search-bar {
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  text-indent: 15px;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation bar styling */
+
+.database-nav-bar {
+    color: whitesmoke;
+    width: 100%;
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+.database-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.database-nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.database-nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Underline Animation */
+.database-nav ul li a{
+    display: inline-block;
+    position: relative;
+    color: #000;
+  }
+  
+  .database-nav ul li a:after, #artists a:after, #socials a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 110%;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .database-nav ul li a:hover:after, #artists a:hover:after, #socials a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .database-content-area {
+  }
