@@ -51,13 +51,13 @@
 .list {
   color: black;
   margin-top: 1%;
-  padding: 0% 5% 5% 5%;
+  padding: 0% 5% 5% 0%;
   background: white;
   border-radius: 10px;
   display: flex;
   flex-flow: row wrap;
-  flex-wrap: wrap;
-  flex-direction: row;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
 }
 
 .search-bar {
@@ -105,6 +105,19 @@
   font-weight: bold;
 }
 
+.categories {
+  padding-top: 4%;
+  vertical-align: top;
+  width: 200px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.categories-list button {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
 /* Underline Animation */
 .database-nav ul li a{
     display: inline-block;
@@ -131,5 +144,6 @@
     transform-origin: bottom left;
   }
 
-  .database-content-area {
+  .model-list{
+    width: 100%;
   }
