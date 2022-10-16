@@ -18,7 +18,7 @@ Whenever our artists release a new batch of models, they will be displayed in ou
 ____________________________________________  
 
 Current Version: **Artisfri 1.1**
-<br/><br/>Latest Updates:
+<br/><br/>**Latest Updates:**
 <br/>-Search functionality for models
 <br/>-Categories for models
 <br/>-Blog Page
