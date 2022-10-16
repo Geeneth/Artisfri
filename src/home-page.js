@@ -28,7 +28,7 @@ function HomePage() {
               <a href="#team-section">Team</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="/blog">Blog</Link>
             </li>
           </ul>
         </nav>

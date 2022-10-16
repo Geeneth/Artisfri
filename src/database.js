@@ -26,9 +26,9 @@ function Database() {
     } else {
       //if the button clicked is not "All", then filter the data
       const filtered = products.filter((sorted) => {
-        return sorted.category === button;
+        return sorted.category.includes(button);
       });
-      //set the data to the filtered data
+      //set the filtered array to the state variable "data"
       console.log(filtered);
       setData(filtered);
     }
@@ -45,7 +45,7 @@ function Database() {
           </h2>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/blog">Blog</Link>
             </li>
           </ul>
         </nav>
@@ -67,7 +67,7 @@ function Database() {
               <div className="categories-list">
                 {/* creating a button for each category */}
                 {/* each button uses the "filter" method defined at the top */}
-                <button id="All" className="btn" onClick={() => filter("All")}>
+                <button id="All" style={{color: "white", backgroundColor: "black"}} className="btn" onClick={() => filter("All")}>
                   All
                 </button>
                 <button
@@ -84,6 +84,20 @@ function Database() {
                 >
                   Environment
                 </button>
+                <button
+                  id="Medieval"
+                  className="btn"
+                  onClick={() => filter("Medieval")}
+                >
+                  Medieval
+                </button>
+                <button
+                  id="Industrial"
+                  className="btn"
+                  onClick={() => filter("Industrial")}
+                >
+                  Industrial
+                </button>
               </div>
             </td>
             <td className="model-list">
@@ -92,7 +106,6 @@ function Database() {
                   //filtering the data based on the query from the search bar
                   .filter((products) =>
                     products.title.toLowerCase().includes(query)
-                    
                   )
                   .map((product, index) => (
                     <div className="vertical-asset-card-block">
@@ -104,7 +117,6 @@ function Database() {
                       />
                     </div>
                   ))}
-                  
               </div>
             </td>
           </tr>

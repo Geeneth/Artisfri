@@ -12,26 +12,26 @@ function Team(props) {
           link_image={"./images/team/linkedin-logo.png"}
           link={"https://www.linkedin.com/in/geeneth-kulatunge-5ab6821b5/"}
         />
-        {/* <TeamCard
-          name={"Geeneth Kulatunge"}
-          bio={"Software Developer for Artisfri Loves turtles!"}
-          image={"./images/team/geeneth-kulatunge.jpeg"}
+         <TeamCard
+          name={"Dimantha Goonewardena"}
+          bio={"Software Developer | 3D Artist"}
+          image={"./images/team/empty-user.png"}
           link_image={"./images/team/linkedin-logo.png"}
-          link={"https://www.linkedin.com/in/geeneth-kulatunge-5ab6821b5/"}
-        /> */}
+          link={"https://www.linkedin.com/in/dimantha-goonewardena-376b20193/"}
+        />
         
       </div>
       <div className="team-block" style={{paddingTop: "20px"}}>
         <TeamCard
           name={"Amantha Jayasuriya"}
-          bio={"3D Artist | UI/UX Designer"}
+          bio={"UI/UX Designer | 3D Artist"}
           image={"./images/team/empty-user.png"}
           link_image={"./images/team/linkedin-logo.png"}
           link={"https://www.linkedin.com/in/amantha-jayasuriya-5a59231ba/"}
         />
         <TeamCard
-          name={"Dimantha Goonewardena"}
-          bio={"3D Artist | Software Developer"}
+          name={"Sheveen Manthilake"}
+          bio={"3D Artist"}
           image={"./images/team/empty-user.png"}
           link_image={"./images/team/linkedin-logo.png"}
           link={"https://www.linkedin.com/in/dimantha-goonewardena-376b20193/"}

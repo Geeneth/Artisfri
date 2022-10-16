@@ -2,39 +2,44 @@
 
 export const arrivals = [
   {
-    title: "Withered Tree",
+    category: "Medieval",
+    title: "Throne",
     description:
-      "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
-    image: "./assets/dimantha/images/withered-tree-1.png",
-    links: ["./assets/dimantha/withered-tree-1.fbx"],
+      "An elegant throne to add to your meidieval settings.",
+    image: "./assets/dimantha/images/throne.png",
+    links: ["./assets/dimantha/throne.fbx"],
   },
   {
-    title: "Withered Tree 2",
+    category: "Furniture",
+    title: "Computer Table",
     description:
-      "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
-    image: "./assets/dimantha/images/withered-tree-2.png",
-    links: ["./assets/dimantha/withered-tree-2.fbx"],
+      "The classic computer table, fits perfectly in any room to facilitate a computer setup.",
+    image: "./assets/amantha/images/pc-table.png",
+    links: ["./assets/amantha/pc-table.fbx"],
   },
   {
-    title: "Large Grass",
+    category: "Medieval",
+    title: "Shield",
     description:
-      "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
-    image: "./assets/dimantha/images/grass-large.png",
-    links: ["./assets/dimantha/grass-large.fbx"],
+      "A classic medieval shield to incorporate into your meidieval settings. Defence is the best offence.",
+    image: "./assets/dimantha/images/shield.png",
+    links: ["./assets/dimantha/shield.fbx"],
   },
   {
-    title: "Medium Grass",
+    category: "Industrial",
+    title: "Industrial Arm",
     description:
-      "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
-    image: "./assets/dimantha/images/grass-medium.png",
-    links: ["./assets/dimantha/grass-medium.fbx"],
+      "A fundamental industrial arm for your factories or compounds.",
+    image: "./assets/amantha/images/industrial-arm.png",
+    links: ["./assets/amantha/industrial-arm.fbx"],
   },
   {
-    title: "Small Grass",
+    category: "Furniture",
+    title: "Coffee Table",
     description:
-      "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
-    image: "./assets/dimantha/images/grass-small.png",
-    links: ["./assets/dimantha/grass-small.fbx"],
+      "A beautiful coffee table to add to your collection. It will look fantastic in the set of a living area",
+    image: "./assets/sheveen/images/coffee-table.png",
+    links: ["./assets/sheveen/coffee-table.mb"],
   },
 ];
 

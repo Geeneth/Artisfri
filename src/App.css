@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
   margin-top: 0%;
   overscroll-behavior: none;
+  font-family: "Poppins", sans-serif;
 }
 
 ::-webkit-scrollbar {

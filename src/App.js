@@ -6,9 +6,8 @@ import { arrivals } from "./components/new-arrivals";
 import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
 import HomePage from "./home-page";
 import Database from "./database";
-
-//temp
 import DatabaseTrial from "./database";
+import Blog from "./blog";
 
 function App() {
   return (
@@ -17,7 +16,8 @@ function App() {
       <div className="App" id="app">
         <Routes>
         <Route path="/" element={<HomePage />}/>
-        <Route path="/database" element={<DatabaseTrial />}/>
+        <Route path="/database" element={<Database />}/>
+        <Route path="/blog" element={<Blog />}/>
         </Routes>
       </div>
     </Router>
