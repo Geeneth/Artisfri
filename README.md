@@ -18,13 +18,13 @@ Whenever our artists release a new batch of models, they will be displayed in ou
 ____________________________________________  
 
 Current Version: **Artisfri 1.1**
-Added:
--Search functionality for models
--Categories for models
--Blog Page
--Visual changes
--New Artist
--New Models
+<br/>Added:
+<br/>-Search functionality for models
+<br/>-Categories for models
+<br/>-Blog Page
+<br/>-Visual changes
+<br/>-New Artist
+<br/>-New Models
 ____________________________________________  
 
 ## Getting Started with Create React App
