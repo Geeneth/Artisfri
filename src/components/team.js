@@ -34,7 +34,7 @@ function Team(props) {
           bio={"3D Artist"}
           image={"./images/team/empty-user.png"}
           link_image={"./images/team/linkedin-logo.png"}
-          link={"https://www.linkedin.com/in/dimantha-goonewardena-376b20193/"}
+          link={"https://www.linkedin.com/in/sheveen-manthilake-7465091bb/"}
         />
       </div>
     </div>
