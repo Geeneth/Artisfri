@@ -29,7 +29,6 @@ function Database() {
         return sorted.category.includes(button);
       });
       //set the filtered array to the state variable "data"
-      console.log(filtered);
       setData(filtered);
     }
   };
