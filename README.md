@@ -15,7 +15,16 @@ Whenever our artists release a new batch of models, they will be displayed in ou
 
 ![](read-me-images/database.png)
 <sub>Database Page</sub>  
+____________________________________________  
 
+Current Version: **Artisfri 1.1**
+Added:
+-Search functionality for models
+-Categories for models
+-Blog Page
+-Visual changes
+-New Artist
+-New Models
 ____________________________________________  
 
 ## Getting Started with Create React App
