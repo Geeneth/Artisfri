@@ -2,6 +2,18 @@ Artisfri is a platform for creators of all sorts to visit and purchase very affo
 
 <sub>**A large number of the features are yet to be implemented and will be released in the future. The project is still new and will grow functionally and aesthetically with time.**</sub>
 
+____________________________________________  
+
+Current Version: **Artisfri 1.1**
+<br/><br/>**Latest Updates:**
+<br/>-Search functionality for models
+<br/>-Categories for models
+<br/>-Blog Page
+<br/>-Visual changes
+<br/>-New Artist
+<br/>-New Models
+____________________________________________  
+
 ![](read-me-images/introduction.png)
 
 
@@ -18,16 +30,7 @@ Whenever our artists release a new batch of models, they will be displayed in ou
 
 ![](read-me-images/blog.png)
 <sub>Blog Page</sub>  
-____________________________________________  
 
-Current Version: **Artisfri 1.1**
-<br/><br/>**Latest Updates:**
-<br/>-Search functionality for models
-<br/>-Categories for models
-<br/>-Blog Page
-<br/>-Visual changes
-<br/>-New Artist
-<br/>-New Models
 ____________________________________________  
 
 ## Getting Started with Create React App
