@@ -66,6 +66,16 @@ function Blog() {
               image={"./images/blog/inspiration/thumbnail.svg"}
             />
           </li>
+          <li>
+            {/* <BlogSelection
+              className="blog-selection"
+              onClickFunction={render_article}
+              title={"Update Log"}
+              body={""}
+              body_2={""}
+              image={"./images/blog/update-log/thumbnail.svg"}
+            /> */}
+          </li>
         </ul>
       </div>
     </div>
