@@ -19,7 +19,7 @@ function HomePage() {
           <h2 className="full-name">ARTISFRI</h2>
           <ul>
             <li>
-              <Link to="/database">Assets</Link>
+              <Link to="/database">Asset</Link>
             </li>
             <li>
               <a href="#about-us">About Us</a>
