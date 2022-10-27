@@ -5,7 +5,11 @@
     border-radius: 10px;
 }
 
-.artist-card{
+.darkmodebutton{
+    display: none;
+}
+
+.light .artist-card{
     width: 40%;
     display: flex;
     align-items: center;
@@ -15,6 +19,20 @@
     border: 1px solid black;
     border-radius: 10px;
     background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 1% 1% 1% 1%;
+}
+
+.dark .artist-card{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #262626;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     padding: 1% 1% 1% 1%;
 }
@@ -57,10 +75,18 @@
     padding-top: 10px;
 }
 
-.team-section{
+.light .team-section{
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     padding-bottom: 5%;
     border-bottom: #e2911f solid 2px;
+}
+
+.dark .team-section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 5%;
+    border-bottom: #122F50 solid 2px;
 }

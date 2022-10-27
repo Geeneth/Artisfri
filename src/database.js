@@ -4,7 +4,9 @@ import AssetVerticalCard from "./components/asset-vertical-card";
 import { products } from "./components/database-data";
 import { arrivals } from "./components/new-arrivals";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, createContext } from "react";
+import DarkMode from "./components/darkmode"
+
 
 function Database() {
   const [data, setData] = useState(products);
@@ -33,7 +35,10 @@ function Database() {
     }
   };
   return (
-    <div id="database-page">
+    <div id="database-page">    
+      <div className="darkmodebutton">
+        <DarkMode />
+      </div>  
       <div className="database-nav-bar">
         <nav className="database-nav">
           {/* <h2 className="full-name">ARTISFRI</h2> */}
@@ -46,6 +51,7 @@ function Database() {
             <li>
               <Link to="/blog">Blog</Link>
             </li>
+         
           </ul>
         </nav>
       </div>

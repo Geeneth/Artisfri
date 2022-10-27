@@ -9,17 +9,22 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ArtistCard from "./components/team-card";
 import { team_info } from "./components/team-info";
 import Team from "./components/team";
+import DarkMode from "./components/darkmode"
+
 
 function HomePage() {
   return (
     //Navigation bar
     <div className="App" id="app">
+      <div className="darkmodebutton">
+        <DarkMode />
+      </div>
       <div className="nav-bar">
         <nav>
           <h2 className="full-name">ARTISFRI</h2>
           <ul>
             <li>
-              <Link to="/database">Asset</Link>
+              <Link to="/database">Assets</Link>
             </li>
             <li>
               <a href="#about-us">About Us</a>
@@ -30,6 +35,7 @@ function HomePage() {
             <li>
               <Link to="/blog">Blog</Link>
             </li>
+            <DarkMode />
           </ul>
         </nav>
       </div>
@@ -49,7 +55,7 @@ function HomePage() {
       </div>
 
       <div id="new-arrivals">
-        <h1 className="assets-section-title" style={{ color: "black" }}>
+        <h1 className="assets-section-title" >
           NEW ARRIVALS
         </h1>
         <div className="assets-table-container">
@@ -77,12 +83,16 @@ function HomePage() {
 
       {/* Footer with socials */}
       <div id="footer">
-        <h2 style={{ marginTop: "2%" }} id="team-section">
-          Team
-        </h2>
+        <div className="teamtitletext">
+          <h2  id="team-section">
+            Team
+          </h2>
+        </div>  
+        <div className="teamcalled">
         <Team />
+        </div>
         <div id="contact">
-          <h2 style={{ marginTop: "3%" }}>Contact Us</h2>
+          <h2 className="contactus">Contact Us</h2>
           {/* email contact info */}
           <div className="contact-content">
             <a href="mailto:kulatungegeeneth@gmail.com">
