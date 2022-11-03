@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+html .dark{
+  background-color: #000;
+}
+
 .light #database-page {
   background-color: rgb(255, 255, 255);
   padding: 1% 0 1% 0;

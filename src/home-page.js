@@ -9,16 +9,13 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ArtistCard from "./components/team-card";
 import { team_info } from "./components/team-info";
 import Team from "./components/team";
-import DarkMode from "./components/darkmode"
-
+import DarkMode from "./components/darkmode";
 
 function HomePage() {
   return (
     //Navigation bar
     <div className="App" id="app">
-      <div className="darkmodebutton">
-        <DarkMode />
-      </div>
+      <div className="darkmodebutton">{/* <DarkMode /> */}</div>
       <div className="nav-bar">
         <nav>
           <h2 className="full-name">ARTISFRI</h2>
@@ -34,6 +31,9 @@ function HomePage() {
             </li>
             <li>
               <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              
             </li>
             <DarkMode />
           </ul>
@@ -55,9 +55,7 @@ function HomePage() {
       </div>
 
       <div id="new-arrivals">
-        <h1 className="assets-section-title" >
-          NEW ARRIVALS
-        </h1>
+        <h1 className="assets-section-title">NEW ARRIVALS</h1>
         <div className="assets-table-container">
           <div className="sections3">
             {/* Mapping through the array of new arrivals and creating cards for each*/}
@@ -84,12 +82,10 @@ function HomePage() {
       {/* Footer with socials */}
       <div id="footer">
         <div className="teamtitletext">
-          <h2  id="team-section">
-            Team
-          </h2>
-        </div>  
+          <h2 id="team-section">Team</h2>
+        </div>
         <div className="teamcalled">
-        <Team />
+          <Team />
         </div>
         <div id="contact">
           <h2 className="contactus">Contact Us</h2>
