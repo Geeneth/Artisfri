@@ -10,7 +10,7 @@ const DarkMode = () => {
 
   let buttonImage = "./images/button-icons/lightTheme.png"
 
-  if (localStorage) {
+  if (localStorage.getItem("theme")) {
     theme = localStorage.getItem("theme");
     buttonImage = "./images/button-icons/"+theme+"Theme.png"
   }

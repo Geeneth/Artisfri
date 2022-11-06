@@ -6,14 +6,14 @@ export const products = [
     title: "Wooden Chair",
     description: "A basic wooden chair to add to your 3D environment. ",
     image: "./assets/amantha/images/Wooden_Chair_Furniture.png",
-    links: ["./assets/amantha/Wooden_Chair_Furniture.fbx"],
+    links: ["wooden-chair"],
   },
   {
     category: "Furniture",
     title: "Chair",
     description: "A basic chair to add to your 3D environment.",
     image: "./assets/amantha/images/Chair_Furniture.png",
-    links: ["./assets/amantha/Chair_Furniture.fbx"],
+    links: ["chair"],
   },
   {
     category: "Environment",
@@ -21,7 +21,7 @@ export const products = [
     description:
       "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/tree-1.png",
-    links: ["./assets/dimantha/tree-1.fbx"],
+    links: ["tree-1"],
   },
   {
     category: "Environment",
@@ -29,7 +29,7 @@ export const products = [
     description:
       "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/tree-2.png",
-    links: ["./assets/dimantha/tree-2.fbx"],
+    links: ["tree-2"],
   },
   {
     category: "Environment",
@@ -37,7 +37,7 @@ export const products = [
     description:
       "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/tree-3.png",
-    links: ["./assets/dimantha/tree-3.fbx"],
+    links: ["tree-3"],
   },
   {
     category: "Environment",
@@ -45,7 +45,7 @@ export const products = [
     description:
       "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/withered-tree-1.png",
-    links: ["./assets/dimantha/withered-tree-1.fbx"],
+    links: ["tree-1"],
   },
   {
     category: "Environment",
@@ -53,7 +53,7 @@ export const products = [
     description:
       "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/withered-tree-2.png",
-    links: ["./assets/dimantha/withered-tree-2.fbx"],
+    links: ["withered-tree-2"],
   },
   {
     category: "Environment",
@@ -61,7 +61,7 @@ export const products = [
     description:
       "A very basic model of grass to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/grass-large.png",
-    links: ["./assets/dimantha/grass-large.fbx"],
+    links: ["grass-large"],
   },
   {
     category: "Environment",
@@ -69,7 +69,7 @@ export const products = [
     description:
       "A very basic model of grass to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/grass-medium.png",
-    links: ["./assets/dimantha/grass-medium.fbx"],
+    links: ["grass-medium"],
   },
   {
     category: "Environment",
@@ -77,7 +77,7 @@ export const products = [
     description:
       "A very basic model of grass to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/grass-small.png",
-    links: ["./assets/dimantha/grass-small.fbx"],
+    links: ["grass-small"],
   },
   {
     category: "Environment",
@@ -85,7 +85,7 @@ export const products = [
     description:
       "A pair of low poly rocks to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/rocks.png",
-    links: ["./assets/dimantha/rocks.fbx"],
+    links: ["rocks"],
   },
   {
     category: "Furniture",
@@ -93,7 +93,7 @@ export const products = [
     description:
       "A TV Stand is a great piece of furniture to add to your 3D home environment. It can be used to create a set of a room.",
     image: "./assets/amantha/images/TV_Stand.png",
-    links: ["./assets/amantha/TV_Stand_Furniture.fbx"],
+    links: ["tv-stand"],
   },
   {
     category: "Furniture",
@@ -101,7 +101,7 @@ export const products = [
     description:
       "This is a great table to add to your collection. It can serve very well in creating a set of a room.",
     image: "./assets/amantha/images/Table_Furniture.jpg",
-    links: ["./assets/amantha/Table_Furniture.fbx"],
+    links: ["table"],
   },
   {
     category: "Furniture",
@@ -109,7 +109,7 @@ export const products = [
     description:
       "The classic computer table, fits perfectly in any room to facilitate a computer setup.",
     image: "./assets/amantha/images/pc-table.png",
-    links: ["./assets/amantha/pc-table.fbx"],
+    links: ["pc-table"],
   },
   {
     category: "Industrial",
@@ -117,7 +117,7 @@ export const products = [
     description:
       "A fundamental industrial arm for your factories or compounds.",
     image: "./assets/amantha/images/industrial-arm.png",
-    links: ["./assets/amantha/industrial-arm.fbx"],
+    links: ["industrial-arm"],
   },
   {
     category: "Furniture",
@@ -125,7 +125,7 @@ export const products = [
     description:
       "Protect your property with this fence. It can be used to create the set of a house.",
     image: "./assets/amantha/images/fence.png",
-    links: ["./assets/amantha/fence.fbx"],
+    links: ["fence"],
   },
   {
     category: "Medieval",
@@ -133,7 +133,7 @@ export const products = [
     description:
       "An elegant throne to add to your meidieval castle settings.",
     image: "./assets/dimantha/images/throne.png",
-    links: ["./assets/dimantha/throne.fbx"],
+    links: ["throne"],
   },
   {
     category: "Medieval",
@@ -141,7 +141,7 @@ export const products = [
     description:
       "A classic medieval shield to incorporate into your meidieval settings. Defence is the best offence.",
     image: "./assets/dimantha/images/shield.png",
-    links: ["./assets/dimantha/shield.fbx"],
+    links: ["shield"],
   },
   {
     category: ["Furniture", "Medieval"],
@@ -149,7 +149,7 @@ export const products = [
     description:
       "Lighting goes a long way in creating ambience. This lantern is a great addition to your medieval settings.",
     image: "./assets/dimantha/images/lantern.png",
-    links: ["./assets/dimantha/lantern.fbx"],
+    links: ["lantern"],
   },
   {
     category: "Furniture",
@@ -157,7 +157,7 @@ export const products = [
     description:
       "A beautiful coffee table to add to your collection. It will look fantastic in the set of a living area",
     image: "./assets/sheveen/images/coffee-table.png",
-    links: ["./assets/sheveen/coffee-table.mb"],
+    links: ["coffee-table"],
   },
 ];
 

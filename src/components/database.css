@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 html .dark{
-  background-color: #000;
+  background-color: #121212;
 }
 
 .light #database-page {
@@ -12,7 +12,7 @@ html .dark{
 }
 
 .dark #database-page {
-  background-color: rgb(0, 0, 0);
+  background-color: #121212;
   padding: 1% 0 1% 0;
   margin-top: 0%;
   padding-left: 0.75%;
@@ -38,7 +38,7 @@ html .dark{
   color: rgb(255, 255, 255);
   margin-top: 2%;
   padding: 0% 5% 5% 5%;
-  background: rgb(0, 0, 0);
+  background: #121212;
   border-radius: 10px;
   display: flex;
   flex-flow: row wrap;
@@ -117,7 +117,7 @@ html .dark{
   color: rgb(255, 255, 255);
   margin-top: 0.5%;
   padding: 0% 3% 5% 0%;
-  background: rgb(0, 0, 0);
+  background: #121212;
   border-radius: 10px;
   display: flex;
   flex-flow: row wrap;

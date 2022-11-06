@@ -20,7 +20,7 @@ function Database() {
       elements[i].style.color = "black";
     }
     //changing the color of the button that was clicked
-    document.getElementById(button).style.backgroundColor = "#000";
+    document.getElementById(button).style.backgroundColor = "#121212";
     document.getElementById(button).style.color = "#FFF";
     if (button === "All") {
       //if the button clicked is "All", then show all the data
@@ -72,7 +72,7 @@ function Database() {
               <div className="categories-list">
                 {/* creating a button for each category */}
                 {/* each button uses the "filter" method defined at the top */}
-                <button id="All" style={{color: "white", backgroundColor: "black"}} className="btn" onClick={() => filter("All")}>
+                <button id="All" style={{color: "white", backgroundColor: "#121212"}} className="btn" onClick={() => filter("All")}>
                   All
                 </button>
                 <button

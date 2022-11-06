@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./asset-vertical-card.css";
-import DarkMode from "./darkmode"
-
+import DarkMode from "./darkmode";
 
 function AssetVerticalCard(props) {
   const [title, setTitle] = useState(props.title);
@@ -10,13 +9,19 @@ function AssetVerticalCard(props) {
     setTitle("Clicked");
   }
 
+  const download_asset = () => {
+    console.log("Downloaded");
+    window.open(
+      "https://artisfri.herokuapp.com/download?modelname=" + props.links[0]
+    );
+  };
+
   return (
     <div className="asset-item">
       <div className="darkmodebutton">
         <DarkMode />
       </div>
       <div className="asset-image-container">
-
         {/* Using the props passed from the home page, the image is displayed */}
         <img className="asset-image" src={props.image} alt={props.title} />
       </div>
@@ -28,7 +33,7 @@ function AssetVerticalCard(props) {
       {/* Using the props passed from the home page, the links are displayed, in the future there will be multiple links*/}
       <div className="links-area">
         <div className="asset-links-2">
-          <a id="download-button" href={props.links[0]} download>
+          <a id="download-button" onClick={download_asset}>
             {"Download"}
           </a>
         </div>
@@ -41,7 +46,6 @@ function AssetVerticalCard(props) {
             </li>
           ))}
         </ul> */}
-
       </div>
     </div>
   );

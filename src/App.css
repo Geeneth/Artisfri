@@ -3,8 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 :root{
-  --gray: #262626;
+  /* --gray: #121212; */
   --white: #f5f5f5;
+  --shadow_true: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  --shadow_false: 0px 0px 20px rgba(0, 0, 0, 0);
 }
 * {
   scroll-behavior: smooth;
@@ -34,6 +36,7 @@
 
 .light .App {
   --color: var(--white);
+  --shadow_exists: var(--shadow_true);
   --text-color: var(--gray);
   --background: linear-gradient(to right, #ff5f6d, #ff8657, #e2911f);
   --background-size: 400% 400%;
@@ -45,6 +48,7 @@
 
 .dark .App {
   --color: var(--gray);
+  --shadow_exists: var(--shadow_false);
   --background: linear-gradient(to right, #0c1c2e, #122F50, #25587C);
   /*Lighter color: #3AA8C2*/
   --text-color: var(--white);
@@ -169,9 +173,9 @@ nav ul li a {
   margin-top: 30px;
   color: rgb(255, 255, 255);
   padding: 1.5% 5% 5% 5%;
-  background: #262626;
+  background: #121212;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  /* box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); */
 }
 
 .light .sections2 {
@@ -301,7 +305,7 @@ nav ul li a:hover:after, #artists a:hover:after, #socials a:hover:after {
   padding: 1.5% 5% 5% 5%;
   background: var(--color);
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow_exists);
 }
 
 #socials {
@@ -366,6 +370,10 @@ nav ul li a:hover:after, #artists a:hover:after, #socials a:hover:after {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#contact{
+  margin-top: 4%;
 }
 
 .dark .contact-content{
