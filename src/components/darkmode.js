@@ -8,8 +8,11 @@ const DarkMode = () => {
   const darkTheme = "dark";
   let theme;
 
+  let buttonImage = "./images/button-icons/lightTheme.png"
+
   if (localStorage) {
     theme = localStorage.getItem("theme");
+    buttonImage = "./images/button-icons/"+theme+"Theme.png"
   }
 
   if (theme === lightTheme || theme === darkTheme) {
@@ -24,13 +27,13 @@ const DarkMode = () => {
       e.target.classList.remove(clickedClass);
       localStorage.setItem("theme", "light");
       theme = lightTheme;
-      document.getElementById('darkMode').src="./images/button-icons/moon-white.png";
+      document.getElementById('darkMode').src="./images/button-icons/lightTheme.png";
     } else {
       body.classList.replace(lightTheme, darkTheme);
       e.target.classList.add(clickedClass);
       localStorage.setItem("theme", "dark");
       theme = darkTheme;
-      document.getElementById('darkMode').src="./images/button-icons/sun-white.png";
+      document.getElementById('darkMode').src="./images/button-icons/darkTheme.png";
     }
   };
 
@@ -47,7 +50,7 @@ const DarkMode = () => {
     //   />
     // </button>
       <img
-        src="./images/button-icons/moon-white.png"
+        src={buttonImage}
         alt="file-format"
         width={25}
         className={theme === "dark" ? clickedClass : ""}

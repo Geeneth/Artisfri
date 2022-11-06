@@ -142,9 +142,6 @@ nav ul li a {
   color: black;
 }
 
-#dark .btn{
-}
-
 .btn:hover {
   background-color: whitesmoke;
   transition: 0.3s;

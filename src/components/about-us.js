@@ -40,7 +40,7 @@ function AboutUs() {
         <div id="artist-general-info" className="info-tiles">
           <h3 className="about-us-subtitle">ARTISTS</h3>
           <p>
-            All of artists are experienced and have extensive knowledge of 3D
+            All of our artists are experienced and have extensive knowledge of 3D
             modeling. Each artist's products differ from the other and they keep
             consistent with their individual style.
           </p>
