@@ -1,13 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-#database-page {
-  background-color: white;
+html .dark{
+  background-color: #000;
+}
+
+.light #database-page {
+  background-color: rgb(255, 255, 255);
   padding: 1% 0 1% 0;
   margin-top: 0%;
   padding-left: 0.75%;
 }
 
-.database-products {
+.dark #database-page {
+  background-color: rgb(0, 0, 0);
+  padding: 1% 0 1% 0;
+  margin-top: 0%;
+  padding-left: 0.75%;
+}
+
+.darkmodebutton{
+  display: none;
+}
+
+.light .database-products {
   color: black;
   margin-top: 2%;
   padding: 0% 5% 5% 5%;
@@ -19,18 +34,41 @@
   flex-direction: row;
 }
 
-#database-return {
+.dark .database-products {
+  color: rgb(255, 255, 255);
+  margin-top: 2%;
+  padding: 0% 5% 5% 5%;
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.light #database-return {
   text-decoration: none;
   color: black;
 }
 
-#database-return {
+.dark #database-return {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.light #database-return {
   display: inline-block;
   position: relative;
   color: #000;
 }
 
-#database-return:after {
+.dark #database-return {
+  display: inline-block;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.light #database-return:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -44,16 +82,42 @@
   transition: transform 0.25s ease-out;
 }
 
+.dark #database-return:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  top: 110%;
+  background-color: rgb(255, 255, 255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
 #database-return:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.list {
+.light .list {
   color: black;
   margin-top: 0.5%;
   padding: 0% 3% 5% 0%;
   background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+}
+
+.dark .list {
+  color: rgb(255, 255, 255);
+  margin-top: 0.5%;
+  padding: 0% 3% 5% 0%;
+  background: rgb(0, 0, 0);
   border-radius: 10px;
   display: flex;
   flex-flow: row wrap;
@@ -77,9 +141,18 @@
 
 /* Navigation bar styling */
 
-.database-nav-bar {
+.light .database-nav-bar {
   z-index: 6;
   color: whitesmoke;
+  width: 100%;
+  height: 10vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.dark .database-nav-bar {
+  z-index: 6;
+  color: rgb(0, 0, 0);
   width: 100%;
   height: 10vh;
   background-size: cover;
@@ -101,8 +174,15 @@
   padding: 10px 20px;
 }
 
-.database-nav ul li a {
+.light .database-nav ul li a {
   color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.dark .database-nav ul li a {
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
@@ -128,7 +208,13 @@
   color: #000;
 }
 
-.database-nav ul li a:after,
+.database-nav ul li a {
+  display: inline-block;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.light .database-nav ul li a:after,
 #artists a:after,
 #socials a:after {
   content: "";
@@ -140,6 +226,22 @@
   left: 0;
   top: 110%;
   background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.dark .database-nav ul li a:after,
+#artists a:after,
+#socials a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  top: 110%;
+  background-color: rgb(255, 255, 255);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

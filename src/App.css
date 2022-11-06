@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
+:root{
+  --gray: #262626;
+  --white: #f5f5f5;
+}
 * {
   scroll-behavior: smooth;
   margin-top: 0%;
@@ -13,12 +17,41 @@
   display: none;
 }
 
-.App {
-  font-family: "League-Spartan", sans-serif;
-  background: linear-gradient(to right, #ff5f6d, #ff8657, #e2911f);
-  background-size: 400% 400%;
+.darkmodebutton{
+  display: none;
+}
+
+.App{
+  overflow-y: hidden;
+  font-family: "Leageu-Spartan", sans-serif;
+  background: var(--background);
+  color: var(--text-color);
+  background-size: var(--background-size);
+  transition: var(--background) 5s ease-out;
+  overflow-y: scroll;
+}
+
+
+.light .App {
+  --color: var(--white);
+  --text-color: var(--gray);
+  --background: linear-gradient(to right, #ff5f6d, #ff8657, #e2911f);
+  --background-size: 400% 400%;
   animation: change 15s ease-in-out infinite;
-  overflow: hidden;
+  overflow-y: scroll;
+  transition: var(--background) 5s ease-out;
+}
+
+
+.dark .App {
+  --color: var(--gray);
+  --background: linear-gradient(to right, #0c1c2e, #122F50, #25587C);
+  /*Lighter color: #3AA8C2*/
+  --text-color: var(--white);
+  --background-size: 400% 400%;
+  animation: change 15s ease-in-out infinite;
+  overflow-y: scroll;
+  transition: var(--background) 5s ease-out;
 }
 
 @keyframes change {
@@ -36,7 +69,7 @@
 /* Navigation Bar */
 .nav-bar {
   margin-top: 1%;
-  color: whitesmoke;
+  color: #f5f5f5;
   width: 100%;
   height: 10vh;
   background-size: cover;
@@ -124,7 +157,7 @@ nav ul li a {
   border-radius: 10px;
 }
 
-#new-arrivals {
+.light #new-arrivals {
   margin-top: 30px;
   color: black;
   padding: 1.5% 5% 5% 5%;
@@ -132,12 +165,20 @@ nav ul li a {
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
+.dark #new-arrivals {
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  padding: 1.5% 5% 5% 5%;
+  background: #262626;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
 
-.sections2 {
+.light .sections2 {
   margin-top: 30px;
   color: black;
   padding: 1.5% 5% 5% 5%;
-  background: whitesmoke;
+  background: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -146,7 +187,20 @@ nav ul li a {
   flex-direction: row;
 }
 
-.sections3 {
+.dark .sections2 {
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  padding: 1.5% 5% 5% 5%;
+  background: #262626;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.light .sections3 {
   margin-top: 30px;
   color: black;
   padding: 1.5% 5% 5% 5%;
@@ -159,11 +213,33 @@ nav ul li a {
   justify-content: center;
 }
 
+.dark .sections3 {
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  padding: 1.5% 5% 5% 5%;
+  border: #25587C solid 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .vertical-asset-card-block {
   width: 20%;
 }
 
-#new-arrivals h4 {
+.light #new-arrivals h4 {
+  color:rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.dark #new-arrivals h4 {
+  color: white;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -223,7 +299,7 @@ nav ul li a:hover:after, #artists a:hover:after, #socials a:hover:after {
   margin-top: 30px;
   color: black;
   padding: 1.5% 5% 5% 5%;
-  background: whitesmoke;
+  background: var(--color);
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
@@ -255,14 +331,58 @@ nav ul li a:hover:after, #artists a:hover:after, #socials a:hover:after {
   background-color: #000;
 }
 
-.contact-content{
+.light .teamcalled{
+  color:black;
+}
+
+.dark .teamcalled{
+  color:white;
+}
+
+.light .teamtitletext{
+  color:#000;
+  margin-top: "2%";
+}
+
+.dark .teamtitletext{
+  color:rgb(255, 255, 255);
+  margin-top: "2%";
+}
+
+.light .contactus{
+  color:#000;
+  margin-Top: "3%";
+
+}
+
+.dark .contactus{
+  color:rgb(255, 255, 255);
+  margin-Top: "3%";
+}
+
+.light .contact-content{
+  color:#000;
   margin: 4% 20% 1% 20%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.contact-content a{
+.dark .contact-content{
+  color:white;
+  margin: 4% 20% 1% 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.light .contact-content a{
   text-decoration: none;
   color: black;
+}
+
+.dark .contact-content a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }

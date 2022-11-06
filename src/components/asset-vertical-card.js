@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./asset-vertical-card.css";
+import DarkMode from "./darkmode"
+
 
 function AssetVerticalCard(props) {
   const [title, setTitle] = useState(props.title);
@@ -10,6 +12,9 @@ function AssetVerticalCard(props) {
 
   return (
     <div className="asset-item">
+      <div className="darkmodebutton">
+        <DarkMode />
+      </div>
       <div className="asset-image-container">
 
         {/* Using the props passed from the home page, the image is displayed */}

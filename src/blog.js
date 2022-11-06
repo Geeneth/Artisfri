@@ -7,8 +7,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import "./components/blog.css";
 import BlogSelection from "./components/blog-selection";
+import DarkMode from "./components/darkmode"
+
 
 function Blog() {
+  let isBackground = true;
   const render_article = (title, body, body_2) => {
     //display the article
     document.getElementById("blog-article-display").style.display = "block";
@@ -18,17 +21,20 @@ function Blog() {
 
   return (
     <div className="blog-page">
+      <div className="darkmodebutton">
+        <DarkMode />
+      </div>
       <div className="database-nav-bar">
         <nav className="database-nav">
           {/* <h2 className="full-name">ARTISFRI</h2> */}
           <h2 className="return-home">
-            <Link id="database-return" to="/">
-              ARTISFRI
-            </Link>
+              <Link id="database-return" to="/">
+                ARTISFRI
+              </Link>
           </h2>
           <ul>
             <li>
-              <Link to="/database">Assets</Link>
+              <Link id='assetsdirect' to="/database">Assets</Link>
             </li>
           </ul>
         </nav>
