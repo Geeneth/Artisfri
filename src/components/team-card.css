@@ -5,7 +5,11 @@
     border-radius: 10px;
 }
 
-.artist-card{
+.darkmodebutton{
+    display: none;
+}
+
+.light .artist-card{
     width: 40%;
     display: flex;
     align-items: center;
@@ -19,15 +23,38 @@
     padding: 1% 1% 1% 1%;
 }
 
+.dark .artist-card{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #262626;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 1% 1% 1% 1%;
+}
+
 .artist-card-info{
     width: 500%;
     padding-left: 5%;
 }
-
+@media only screen and (max-width: 671px) {
+    .artist-card{
+        min-width: 105% !important;
+    }
+}
 .artist-name{
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 504px) {
+    #id-2{
+        font-size:  120% ;
+    }
 }
 
 .artist-bio{
@@ -45,10 +72,6 @@
     height: 10%;
 }
 
-
-
-
-
 .team-block{
     display: flex;
     align-items: center;
@@ -57,10 +80,26 @@
     padding-top: 10px;
 }
 
-.team-section{
+@media only screen and (max-width: 671px) {
+    .team-block{
+        flex-direction: column !important;
+    }
+
+}
+
+
+.light .team-section{
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     padding-bottom: 5%;
     border-bottom: #e2911f solid 2px;
+}
+
+.dark .team-section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 5%;
+    border-bottom: #122F50 solid 2px;
 }

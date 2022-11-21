@@ -1,4 +1,4 @@
-.asset-item {
+.light .asset-item {
     width: 85%;
     margin-top: 30px;
     color: black;
@@ -7,6 +7,19 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
+  }
+.dark .asset-item {
+    width: 85%;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    padding: 10% 5% 5% 5%;
+    background: #262626;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); */
+    text-align: center;
+  }
+  .darkmodebutton{
+    display: none;
   }
   
   .asset-title {
@@ -38,19 +51,35 @@
     text-decoration: none;
   }
   
-  .asset-links li {
+  .light .asset-links li {
     list-style-type: none;
     color: white;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
   }
+  .dark .asset-links li {
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+  }
 
-  .asset-links a {
+  .light .asset-links a {
     text-decoration: none;
     transition: 0.3s;
     color: black;
     border: white 5px solid;
+    border-radius: 10px;
+    padding: 2% 5% 2% 5%;
+  }
+
+  .dark .asset-links a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 5px solid;
     border-radius: 10px;
     padding: 2% 5% 2% 5%;
   }
@@ -64,13 +93,19 @@
   }
 
   /* Testing */
-  .asset-links-2 a {
+  .light .asset-links-2 a {
     display: inline-block;
     position: relative;
     color: #000;
   }
+
+  .dark .asset-links-2 a {
+    display: inline-block;
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
   
-  .asset-links-2 a:after {
+  .light .asset-links-2 a:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -80,6 +115,20 @@
     left: 0;
     top: 110%;
     background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .dark .asset-links-2 a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 110%;
+    background-color: rgb(255, 255, 255);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }

@@ -1,11 +1,16 @@
 import "./team-card.css";
+import DarkMode from "./darkmode"
+import React, { useState } from "react";
 
 function TeamCard(props) {
-  return (
+return (
     <div className="artist-card">
+      <div className="darkmodebutton">
+        <DarkMode />
+      </div>
       <img className="artist-image" src={props.image} alt={props.name} />
       <div className="artist-card-info">
-        <h2 className="artist-name">{props.name}</h2>
+        <h2 id={props.id} className="artist-name">{props.name}</h2>
         <p className="artist-bio">{props.bio}</p>
       </div>
       <a

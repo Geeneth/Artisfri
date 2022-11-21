@@ -31,8 +31,31 @@
   justify-content: space-between;
 }
 
+
 .info-tiles p {
   width: 50%;
   text-align: center;
   font-weight: bold;
+}
+
+
+@media only screen and (max-width: 671px) {
+  .about-us{
+    font-size: 0.9em;
+  }
+  .info-tiles{
+      text-align: center;
+      align-items: center;
+      line-height: 29px;
+      font-size: 1.1rem;
+      flex-direction:column;
+  }
+  .info-tiles p {
+    width: 90%;
+  }
+
+  #polygon-info{
+    flex-direction: column-reverse !important;
+  }
+
 }

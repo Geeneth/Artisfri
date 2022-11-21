@@ -1,0 +1,22 @@
+#darkMode {
+  /* width: 30px;
+  height: 30px; */
+  /* background-color: white; */
+  border-radius: 10px;
+  top: 50%;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%);  */
+  }
+  
+  #darkMode:hover,
+  #darkMode:focus {
+    filter: none;
+    /* background-color: black; */
+    cursor: pointer;
+  }
+  
+  #darkMode.clicked {
+    filter: none !important;
+    /* background-color: black; */
+  }
+  

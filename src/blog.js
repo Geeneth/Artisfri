@@ -7,8 +7,15 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import "./components/blog.css";
 import BlogSelection from "./components/blog-selection";
+import DarkMode from "./components/darkmode";
+import {motion} from 'framer-motion';
+import { useEffect } from 'react'
+
 
 function Blog() {
+  const[isOpen,setIsOpen] = useState(false);
+
+  let isBackground = true;
   const render_article = (title, body, body_2) => {
     //display the article
     document.getElementById("blog-article-display").style.display = "block";
@@ -18,29 +25,36 @@ function Blog() {
 
   return (
     <div className="blog-page">
+      <div className="darkmodebutton">
+        <DarkMode />
+      </div>
       <div className="database-nav-bar">
         <nav className="database-nav">
           {/* <h2 className="full-name">ARTISFRI</h2> */}
           <h2 className="return-home">
-            <Link id="database-return" to="/">
-              ARTISFRI
-            </Link>
+              <Link id="database-return" to="/">
+                ARTISFRI
+              </Link>
           </h2>
           <ul>
             <li>
-              <Link to="/database">Assets</Link>
+              <Link id='assetsdirect' to="/database">Assets</Link>
             </li>
           </ul>
         </nav>
       </div>
-
-      <h1 className="blog-sign">B l o g</h1>
-
+      <div id="blog-article-display-mobile">
+        <h1 id="blog-article-title-mobile">Welcome!</h1>
+        <p id="blog-article-body-mobile">Select any of the articles on the right!</p>
+      </div>
+      <h1 className="blog-sign">B L O G</h1>
+  
       {/* Blog articles */}
       <div id="blog-article-display">
         <h1 id="blog-article-title">Welcome!</h1>
         <p id="blog-article-body">Select any of the articles on the right!</p>
       </div>
+  
       {/* list of BlogSelection items */}
       <div className="blog-article-list">
         <ul>
@@ -78,6 +92,16 @@ function Blog() {
           </li>
         </ul>
       </div>
+       <motion.div transition={{layout:{duration: 1}}} onClick={() => setIsOpen(!isOpen)} className="card-blog-1">
+            <motion.h2 layout>Categories</motion.h2>
+            {isOpen &&(
+              <motion.div>
+                  <p>
+                    hello howdy doody macaroni
+                  </p>
+              </motion.div>
+            )} 
+       </motion.div>
     </div>
   );
 }

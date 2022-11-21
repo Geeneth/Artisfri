@@ -6,13 +6,15 @@ function Team(props) {
     <div className="team-section">
       <div className="team-block">
         <TeamCard
+          id={"id-1"}
           name={"Geeneth Kulatunge"}
           bio={"Founder | Software Developer"}
           image={"./images/team/geeneth-kulatunge.jpeg"}
           link_image={"./images/team/linkedin-logo.png"}
           link={"https://www.linkedin.com/in/geeneth-kulatunge-5ab6821b5/"}
         />
-         <TeamCard
+        <TeamCard
+          id={"id-2"}
           name={"Dimantha Goonewardena"}
           bio={"Software Developer | 3D Artist"}
           image={"./images/team/empty-user.png"}
@@ -23,6 +25,7 @@ function Team(props) {
       </div>
       <div className="team-block" style={{paddingTop: "20px"}}>
         <TeamCard
+          id={"id-3"}
           name={"Amantha Jayasuriya"}
           bio={"UI/UX Designer | 3D Artist"}
           image={"./images/team/empty-user.png"}
@@ -30,6 +33,7 @@ function Team(props) {
           link={"https://www.linkedin.com/in/amantha-jayasuriya-5a59231ba/"}
         />
         <TeamCard
+          id={"id-4"}
           name={"Sheveen Manthilake"}
           bio={"3D Artist"}
           image={"./images/team/empty-user.png"}
