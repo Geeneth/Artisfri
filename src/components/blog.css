@@ -236,7 +236,7 @@
 }
 
 .card-blog-2{
-  top: 50%;
+  top: 45%;
   right: 10%;
   align-items: center;
   background: #f5f5f5;
@@ -253,7 +253,10 @@
   color: #f5f5f5;
 }
 
-
+.light .card-blog-2{
+  background:#000;
+  color: #f5f5f5;
+}
 
 
 .light .card-blog-1[data-isOpen="true"] {
