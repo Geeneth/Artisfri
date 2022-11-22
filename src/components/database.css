@@ -8,15 +8,12 @@ html .dark{
   background-color: rgb(255, 255, 255);
   padding: 1% 0 1% 0;
   margin-top: 0%;
-  padding-left: 0.75%;
-  overflow: scroll !important;
 }
 
 .dark #database-page {
   background-color: #121212;
   padding: 1% 0 1% 0;
   margin-top: 0%;
-  padding-left: 0.75%;
 }
 
 .darkmodebutton{
@@ -134,11 +131,17 @@ html .dark{
   margin-top: 0.5%;
 }
 
-.search-bar-container {
+.dropdown {
+  padding-top: 1%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row-reverse;
 }
+
+.search-bar-container {
+ padding-left: 1%;
+ padding-right: 1%;
+}
+
 
 /* Navigation bar styling */
 
@@ -266,4 +269,7 @@ html .dark{
   .database-table-view{
     margin-left: 4%;
   }
+}
+.nextui-c-cVVQUL.nextui-c-PJLV.nextui-c-cVVQUL-crfSce-borderWeight-light.nextui-c-PJLV-gulvcB-isFocusVisible-false.nextui-c-cVVQUL-idYOtdv-css.nextui-popover-content-container.nextui-popover-content-enter.nextui-popover-content-enter-active{
+  border-style: solid;
 }

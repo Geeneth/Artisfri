@@ -86,6 +86,7 @@ function HomePage() {
               >
                 <Link to="/database">Assets</Link>
                 <Link to="/blog">Blog</Link>
+                <DarkMode />
               </Navbar.CollapseItem>
           </Navbar.Collapse>
         </Navbar>

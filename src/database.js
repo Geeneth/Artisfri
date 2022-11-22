@@ -6,8 +6,9 @@ import { arrivals } from "./components/new-arrivals";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useState, createContext } from "react";
 import DarkMode from "./components/darkmode"
-import { Input, Grid, css, Text  } from "@nextui-org/react";
+import { Input, Grid, css, Text, Dropdown  } from "@nextui-org/react";
 import { useEffect } from 'react'
+import React from "react";
 
 
 
@@ -40,6 +41,14 @@ function Database() {
   useEffect(() => {
             document.body.style.overflow = "scroll";
           }, [])
+  
+          
+  const [selected, setSelected] = React.useState(new Set(["Categories"]));
+  const selectedValue = React.useMemo(
+    () => Array.from(selected).join(", ").replaceAll("_", " "),
+    [selected]
+  );
+        
   return (
     <div id="database-page"> 
        
@@ -64,11 +73,10 @@ function Database() {
       </div>
       <div id="search-area">
         <div className="search-bar-container">
-        <Grid>
           <Input
             weight="bold"
             className="search-bar"         
-            width="400px"
+            width="100%"
             clearable
             labelPlaceholder="Search"
             onChange={(e) => setQuery(e.target.value.toLowerCase())}
@@ -80,11 +88,38 @@ function Database() {
                     $$inputTextColor: "#ffc371",
                     $$inputHoverBorderColor: "#ffc371",
                     $$inputFontWeight: "800",
+                    
                   }}  
           />
-        </Grid>
         </div>
-
+        <div className="dropdown">
+          <Dropdown>
+            <Dropdown.Button css={{ 
+              tt: "capitalize",
+              display:"flex",
+              backgroundColor:"#ffc371", 
+            }}>
+              {selectedValue}
+            </Dropdown.Button>
+            <Dropdown.Menu
+              aria-label="Single selection actions"
+              color="warning"
+              disallowEmptySelection
+              selectionMode="single"
+              selectedKeys={selected}
+              onSelectionChange={setSelected}
+              onAction={(key) => filter(key)}
+              css={{
+              }}
+            >
+              <Dropdown.Item key="All" >All</Dropdown.Item>
+              <Dropdown.Item key="Furniture">Furniture</Dropdown.Item>
+              <Dropdown.Item key="Environment" >Environment</Dropdown.Item>
+              <Dropdown.Item key="Medieval" >Medieval</Dropdown.Item>
+              <Dropdown.Item key="Industrial" >Industrial</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </div>
         {/* table to store categories section and the models */}
         <table className="database-table-view">
           <tr>
