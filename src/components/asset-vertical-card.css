@@ -149,3 +149,20 @@
   #download-button {
     text-decoration: none;
   }
+
+  @media only screen and (max-width: 671px) {
+
+    .asset-title{
+      font-size: 1rem;
+      padding-top: 20%;
+    }
+
+    .asset-description{
+      font-size: 0rem;
+    }
+
+    #download-button{
+      font-size: 0.75rem;
+    }
+
+  }

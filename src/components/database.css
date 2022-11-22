@@ -257,3 +257,13 @@ html .dark{
 .model-list {
   width: 100%;
 }
+
+@media only screen and (max-width: 671px) { 
+  .categories {
+    display: none;
+  }
+
+  .database-table-view{
+    margin-left: 4%;
+  }
+}
