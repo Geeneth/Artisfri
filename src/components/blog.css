@@ -2,6 +2,7 @@
 
 .blog-page{
   overflow: hidden;
+  height: 100vh;
 }
 
 .light .blog-page {
@@ -69,7 +70,7 @@
   font-size: 6em;
   font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
-  z-index: -2;
+  z-index: -4;
   
 }
 @media only screen and (max-width: 671px) {
@@ -83,7 +84,7 @@
       font-size: 4em;
       font-family: "Poppins", sans-serif;
       color: rgb(255, 255, 255);
-      z-index: -2;
+      z-index: -4;
     }
 
 }
@@ -202,13 +203,41 @@
   align-self: center;
 }
 
-.card-blog-1{
-  background: #f5f5f5;
-  padding: 3rem 10rem;
-  color: #000;
-  box-sizing: border-box;
+.card-on-mobile{
+  top : 10%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+.card-blog-1{
+  top: 30%;
+  right: 10%;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 1rem 1rem;
+  color: #000;
+  box-sizing: inherit;
+  position: absolute;
+  pointer-events: auto;
+}
+
+
+
+
+.card-blog-1[data-isOpen="true"] {
+  top: 0%;
+  right: 0%;
+}
+
+.card-expand{
+  width: inherit;
+  height: auto;
+  padding: 2% 5% 5% 5%;
+  overflow: scroll;
+
+}
 .card-blog-1 p{
   padding-top: 1rem;
   line-height: 150%;
@@ -216,3 +245,9 @@
   align-items: center;
 }
 
+@media only screen and (min-width: 671px) {
+
+  .card-on-mobile{  
+  display: none;
+  }
+}
