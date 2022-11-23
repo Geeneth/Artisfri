@@ -129,6 +129,7 @@ nav ul li a {
   .App-logo {
     display: none;
   }
+  
 }
 .navbar-app-logo {
   padding-right: 5px;
@@ -156,8 +157,8 @@ nav ul li a {
 @media only screen and (max-width: 671px) {
   .home-headers {
     height: 15vh;
-    font-size: 1em;
-    margin-left: 2.5%;
+    font-size: 0.8em;
+    margin-left: 5%;
     margin-top: 5%;
   }
 }
@@ -344,9 +345,6 @@ nav ul li a:hover:after, #artists a:hover:after, #socials a:hover:after {
   transform-origin: bottom left;
 }
 
-@media only screen and (max-width: 671px) {
-  
-}
 /* Footer */
 #footer {
   margin-top: 30px;

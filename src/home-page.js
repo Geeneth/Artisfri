@@ -10,99 +10,105 @@ import ArtistCard from "./components/team-card";
 import { team_info } from "./components/team-info";
 import Team from "./components/team";
 import DarkMode from "./components/darkmode";
-import { Input, Grid, css, Text, Navbar, Dropdown  } from "@nextui-org/react";
-import { useState, useEffect } from 'react'
+import { Input, Grid, css, Text, Navbar, Dropdown } from "@nextui-org/react";
+import { useState, useEffect } from "react";
 
 function HomePage() {
-
   return (
     //Navigation bar
     <div className="App" id="app">
       <div className="darkmodebutton">{/* <DarkMode /> */}</div>
       <div className="nav-bar">
-          <nav>
-            <h2 className="full-name">ARTISFRI</h2>
-            <ul>
-              <li>
-                <Link to="/database">Assets</Link>
-              </li>
-              <li>
-                <a href="#about-us">About Us</a>
-              </li>
-              <li>
-                <a href="#team-section">Team</a>
-              </li>
-              <li>
-                <Link to="/blog">Blog</Link>
-              </li>
+        <nav>
+          <h2 className="full-name">ARTISFRI</h2>
+          <ul>
+            <li>
+              <Link to="/database">Assets</Link>
+            </li>
+            <li>
+              <a href="#about-us">About Us</a>
+            </li>
+            <li>
+              <a href="#team-section">Team</a>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
               <DarkMode />
-            </ul>
-          </nav>
+            </li>
+          </ul>
+        </nav>
       </div>
       <Navbar
-        disableShadow	
-        disableBlur          
+        disableShadow
+        disableBlur
         maxWidth="md"
         variant="sticky"
         css={{
           padding: "$0",
-          $$navbarTextColor:"#f5f5f5",
-          $$navbarTextWeight:"800",
+          $$navbarTextColor: "#f5f5f5",
+          $$navbarTextWeight: "800",
           $$navbarBackgroundColor: "transparent",
           $$navbarBlurBackgroundColor: "transparent",
           bg: "none",
           "@media only screen and (min-width: 672px)": {
-              display: "none",
-          }
+            display: "none",
+          },
         }}
-        > 
-          <Navbar.Brand
+      >
+        <Navbar.Brand
           css={{
-              marginLeft:"-0.5%",
-            }}
-          >
-            <img src="white-transparent-logo-large.ico" className="navbar-app-logo" alt="logo" width="25px" height="24px" />
-            <Text b color="inherit" ShowIn="xs" size="$3xl">
-              ARTISFRI
-            </Text>
-          </Navbar.Brand>
-          <Navbar.Toggle/>
-         
-          <Navbar.Collapse
-           css={{
+            marginLeft: "-0.5%",
+          }}
+        >
+          <img
+            src="white-transparent-logo-large.ico"
+            className="navbar-app-logo"
+            alt="logo"
+            width="25px"
+            height="24px"
+          />
+          <Text b color="inherit" ShowIn="xs" size="$3xl">
+            ARTISFRI
+          </Text>
+        </Navbar.Brand>
+        <Navbar.Toggle />
+
+        <Navbar.Collapse
+          css={{
             paddingLeft: "$0",
             $$navbarBackgroundColor: "transparent",
             $$navbarBlurBackgroundColor: "transparent",
             bg: "#262626",
           }}
-          >   
-              <Navbar.CollapseItem
-              css={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-end",
-
-              }}
-              >
-                <Link to="/database">Assets</Link>
-                <Link to="/blog">Blog</Link>
-                <DarkMode />
-              </Navbar.CollapseItem>
-          </Navbar.Collapse>
-        </Navbar>
+        >
+          <Navbar.CollapseItem
+            css={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+            }}
+          >
+            <Link to="/database">Assets</Link>
+            <Link to="/blog">Blog</Link>
+            <DarkMode />
+          </Navbar.CollapseItem>
+        </Navbar.Collapse>
+      </Navbar>
       {/* The home headers and image */}
-          <div className="flex-box">
-            <div className="home-headers">
-              <h1>AFFORDABLE</h1>
-              <h1>ART</h1>
-              <h1>ASSETS</h1>
-              <a href="#new-arrivals">
-                {/* Button to scroll down to the "New Arrivals" section */}
-                <button className="btn">NEW ARRIVALS!</button>
-              </a>
-            </div>
-            <img src="images/home-image.svg" className="App-logo" alt="logo" />
-          </div>
+      <div className="flex-box">
+        <div className="home-headers">
+          <h1>AFFORDABLE</h1>
+          <h1>ART</h1>
+          <h1>ASSETS</h1>
+          <a href="#new-arrivals">
+            {/* Button to scroll down to the "New Arrivals" section */}
+            <button className="btn">NEW ARRIVALS!</button>
+          </a>
+        </div>
+        <img src="images/home-image.svg" className="App-logo" alt="logo" />
+      </div>
 
       <div id="new-arrivals">
         <h1 className="assets-section-title">NEW ARRIVALS</h1>

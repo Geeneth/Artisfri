@@ -97,7 +97,8 @@ function Database() {
             <Dropdown.Button css={{ 
               tt: "capitalize",
               display:"flex",
-              backgroundColor:"#ffc371", 
+              backgroundColor:"#ffc371",
+              color:"black", 
             }}>
               {selectedValue}
             </Dropdown.Button>

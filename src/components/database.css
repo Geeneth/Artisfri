@@ -129,6 +129,7 @@ html .dark{
   border-radius: 10px;
   text-indent: 15px;
   margin-top: 0.5%;
+  
 }
 
 .dropdown {
@@ -261,7 +262,31 @@ html .dark{
   width: 100%;
 }
 
+.search-bar-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.dropdown {
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+@media only screen and (min-width: 671px){
+  .dropdown {
+    display: none;
+  }
+
+}
+
 @media only screen and (max-width: 671px) { 
+
+  .search-bar-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 1%;
+  }
+
   .categories {
     display: none;
   }

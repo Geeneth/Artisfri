@@ -1,10 +1,9 @@
-import {AnimatePresence, motion} from 'framer-motion';
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import "../blog.css";
 
-
 function CategoriesBlogArticle(props) {
-    const[isOpen,setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <motion.div
       data-isOpen={isOpen}
@@ -25,6 +24,14 @@ function CategoriesBlogArticle(props) {
           transition={{ duration: 1 }}
           className="card-expand"
         >
+          <br />
+          <br />
+          <h3>Categories</h3>
+          <p>
+            In order to help users navigate through our list of models, we
+            categorized each model and will continue to do so for any further
+            creations.
+          </p>
           <br />
           <br />
           <h3>Functionality</h3>
