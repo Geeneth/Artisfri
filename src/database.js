@@ -24,7 +24,8 @@ function Database() {
       elements[i].style.color = "black";
     }
     //changing the color of the button that was clicked
-    document.getElementById(button).style.backgroundColor = "#000";
+    document.getElementById(button).style.backgroundColor = "#121212";
+    // document.getElementById(button).style.border = "thin solid #ffc371";
     document.getElementById(button).style.color = "#FFF";
     if (button === "All") {
       //if the button clicked is "All", then show all the data

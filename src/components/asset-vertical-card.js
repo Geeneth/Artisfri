@@ -12,7 +12,8 @@ function AssetVerticalCard(props) {
   const download_asset = () => {
     console.log("Downloaded");
     window.open(
-      "https://artisfri.herokuapp.com/download?modelname=" + props.links[0]
+      
+      "https://artisfri.onrender.com/download?modelname=" + props.links[0]
     );
   };
 
