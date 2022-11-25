@@ -336,6 +336,14 @@ html .dark{
   background-color: red;
 } */
 
-.nextui-c-iwmZdB-ifDbmpe-css{
+.light .nextui-c-iwmZdB-ifDbmpe-css{
   --nextui--inputColor: rgb(218, 218, 218) !important;
+}
+
+.light .nextui-c-iwmZdB-ifDbmpe-css {
+  --nextui--inputTextColor: #000;
+}
+
+.light .nextui-c-iwmZdB-ifDbmpe-css {
+  --nextui--inputPlaceholderColor: #000;
 }
