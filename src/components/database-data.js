@@ -100,7 +100,7 @@ export const products = [
     title: "Table",
     description:
       "This is a great table to add to your collection. It can serve very well in creating a set of a room.",
-    image: "./assets/amantha/images/Table_Furniture.jpg",
+    image: "./assets/amantha/images/Table_Furniture.png",
     links: ["table"],
   },
   {
