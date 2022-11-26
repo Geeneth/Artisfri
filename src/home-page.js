@@ -28,7 +28,7 @@ function HomePage() {
               <HashLink to="/database">Assets</HashLink>
             </li>
             <li>
-              <Link to="/blog">Blog</Link>
+              <HashLink to="/blog">Blog</HashLink>
             </li>
             <li>
               <HashLink to="#about-us">About Us</HashLink>
