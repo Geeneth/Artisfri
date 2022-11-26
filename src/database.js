@@ -4,14 +4,12 @@ import AssetVerticalCard from "./components/asset-vertical-card";
 import { products } from "./components/database-data";
 import { arrivals } from "./components/new-arrivals";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { useState, createContext, createContext } from "react";
+import { useState, createContext } from "react";
 import DarkMode from "./components/darkmode"
 import { Input, Grid, css, Text, Dropdown  } from "@nextui-org/react";
 import { useEffect } from 'react'
 import React from "react";
 
-
-import DarkMode from "./components/darkmode"
 
 
 function Database() {
@@ -26,7 +24,8 @@ function Database() {
       elements[i].style.color = "black";
     }
     //changing the color of the button that was clicked
-    document.getElementById(button).style.backgroundColor = "#000";
+    document.getElementById(button).style.backgroundColor = "#121212";
+    // document.getElementById(button).style.border = "thin solid #ffc371";
     document.getElementById(button).style.color = "#FFF";
     if (button === "All") {
       //if the button clicked is "All", then show all the data
@@ -52,7 +51,11 @@ function Database() {
   );
         
   return (
-    <div id="database-page">
+    <div id="database-page"> 
+       
+      <div className="darkmodebutton">
+        <DarkMode />
+      </div>  
       <div className="database-nav-bar">
         <nav className="database-nav">
           {/* <h2 className="full-name">ARTISFRI</h2> */}
@@ -65,6 +68,7 @@ function Database() {
             <li>
               <Link to="/blog">Blog</Link>
             </li>
+         
           </ul>
         </nav>
       </div>
@@ -125,7 +129,7 @@ function Database() {
               <div className="categories-list">
                 {/* creating a button for each category */}
                 {/* each button uses the "filter" method defined at the top */}
-                <button id="All" style={{color: "white", backgroundColor: "#121212"}} className="btn" onClick={() => filter("All")}>
+                <button id="All" style={{color: "white", backgroundColor: "black"}} className="btn" onClick={() => filter("All")}>
                   All
                 </button>
                 <button
