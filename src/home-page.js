@@ -6,6 +6,8 @@ import { products } from "./components/database-data";
 import { arrivals } from "./components/new-arrivals";
 import Database from "./database";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import ArtistCard from "./components/team-card";
 import { team_info } from "./components/team-info";
 import Team from "./components/team";
@@ -23,16 +25,16 @@ function HomePage() {
           <h2 className="full-name">ARTISFRI</h2>
           <ul>
             <li>
-              <Link to="/database">Assets</Link>
-            </li>
-            <li>
-              <a href="#about-us">About Us</a>
-            </li>
-            <li>
-              <a href="#team-section">Team</a>
+              <HashLink to="/database">Assets</HashLink>
             </li>
             <li>
               <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <HashLink to="#about-us">About Us</HashLink>
+            </li>
+            <li>
+              <HashLink to="#team-section">Team</HashLink>
             </li>
             <li>
               <DarkMode />
@@ -102,10 +104,10 @@ function HomePage() {
           <h1>AFFORDABLE</h1>
           <h1>ART</h1>
           <h1>ASSETS</h1>
-          <a href="#new-arrivals">
+          <HashLink to="#new-arrivals">
             {/* Button to scroll down to the "New Arrivals" section */}
             <button className="btn">NEW ARRIVALS!</button>
-          </a>
+          </HashLink>
         </div>
         <img src="images/home-image.svg" className="App-logo" alt="logo" />
       </div>
