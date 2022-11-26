@@ -12,6 +12,8 @@ import ArtistCard from "./components/team-card";
 import { team_info } from "./components/team-info";
 import Team from "./components/team";
 import DarkMode from "./components/darkmode";
+import { Input, Grid, css, Text, Navbar, Dropdown } from "@nextui-org/react";
+import { useState, useEffect } from "react";
 
 function HomePage() {
   return (
@@ -34,13 +36,68 @@ function HomePage() {
             <li>
               <HashLink to="#team-section">Team</HashLink>
             </li>
-
-            <li></li>
-            <DarkMode />
+            <li>
+              <DarkMode />
+            </li>
           </ul>
         </nav>
       </div>
+      <Navbar
+        disableShadow
+        disableBlur
+        maxWidth="md"
+        variant="sticky"
+        css={{
+          padding: "$0",
+          $$navbarTextColor: "#f5f5f5",
+          $$navbarTextWeight: "800",
+          $$navbarBackgroundColor: "transparent",
+          $$navbarBlurBackgroundColor: "transparent",
+          bg: "none",
+          "@media only screen and (min-width: 672px)": {
+            display: "none",
+          },
+        }}
+      >
+        <Navbar.Brand
+          css={{
+            marginLeft: "-0.5%",
+          }}
+        >
+          <img
+            src="white-transparent-logo-large.ico"
+            className="navbar-app-logo"
+            alt="logo"
+            width="25px"
+            height="24px"
+          />
+          <Text b color="inherit" ShowIn="xs" size="$3xl">
+            ARTISFRI
+          </Text>
+        </Navbar.Brand>
+        <Navbar.Toggle />
 
+        <Navbar.Collapse
+          css={{
+            paddingLeft: "$0",
+            $$navbarBackgroundColor: "transparent",
+            $$navbarBlurBackgroundColor: "transparent",
+            bg: "#262626",
+          }}
+        >
+          <Navbar.CollapseItem
+            css={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+            }}
+          >
+            <Link to="/database">Assets</Link>
+            <Link to="/blog">Blog</Link>
+            <DarkMode />
+          </Navbar.CollapseItem>
+        </Navbar.Collapse>
+      </Navbar>
       {/* The home headers and image */}
       <div className="flex-box">
         <div className="home-headers">

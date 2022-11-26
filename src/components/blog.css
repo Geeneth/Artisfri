@@ -2,17 +2,16 @@
 
 .blog-page{
   overflow: hidden;
+  height: 100vh;
 }
 
 .light .blog-page {
   background-color: white;
-  padding: 1% 0 1% 0;
   margin-top: 0%;
 }
 
 .dark .blog-page{
   background-color: #121212;
-  padding: 1% 0 1% 0;
   margin-top: 0%;
 }
 
@@ -45,12 +44,10 @@
 }
 /* keep blog sign on the left of the screen */
 
-.blog-sign {
-  margin-left: 7%;
-  margin-top: 0%;
-}
+
 .light .blog-sign {
-  width: 37%;
+  width: 38%;
+  margin-left: 7%;
   height: 0%;
   margin-top: 35%;
   transform-origin: 8px 8px;
@@ -63,8 +60,9 @@
 }
 
 .dark .blog-sign {
-  width: 37%;
+  width: 38%;
   height: 0%;
+  margin-left: 7%;
   margin-top: 35%;
   transform-origin: 8px 8px;
   transform: rotate(-90deg);
@@ -72,10 +70,36 @@
   font-size: 6em;
   font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
-  z-index: -2;
+  z-index: -4;
   
 }
+@media only screen and (max-width: 671px) {
+    .dark .blog-sign{
+      width: 137%;
+      height: 0%;
+      margin-left: 0%;
+      transform-origin: 150px 150px;
+      transform: rotate(-90eg);
+      letter-spacing: 30px;
+      font-size: 4em;
+      font-family: "Poppins", sans-serif;
+      color: rgb(255, 255, 255);
+      z-index: -4;
+    }
+    .light .blog-sign{
+      width: 137%;
+      height: 0%;
+      margin-left: 0%;
+      transform-origin: 150px 150px;
+      transform: rotate(-90eg);
+      letter-spacing: 30px;
+      font-size: 4em;
+      font-family: "Poppins", sans-serif;
+      color: rgb(0, 0, 0);
+      z-index: -4;
+    }
 
+}
 .blog-article-list {
   position: absolute;
   top: 0;
@@ -83,7 +107,19 @@
   margin-top: 8%;
   margin-right: 4%;
 }
-
+@media only screen and (max-width: 671px) {
+  .blog-article-list{
+    display:none;
+  }
+  #blog-article-display{
+    display:none;
+  }
+  #blog-article-display-mobile{  
+    padding: 2% 5% 5% 5%;
+    font-size: 14px;
+  }
+  
+}
 .blog-article-list ul li{
   list-style: none;
   margin-bottom: 5%;
@@ -157,7 +193,155 @@
   left: 0;
 }
 
+#blog-article-display-mobile{  
+}
+@media only screen and (min-width: 671px) {
+
+  #blog-article-display-mobile{  
+  display: none;
+  }
+}
+@media only screen and (max-width: 671px) {
+  .blog-article-list{
+    display:none;
+  }
+  #blog-article-display{
+    height: 0vh;
+    display:none;
+  }
+}
 /*center the image*/
 .article-image {
   align-self: center;
+}
+
+.card-on-mobile{
+  top : 10%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-blog-1{
+  top: 30%;
+  right: 10%;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 1rem 3rem;
+  color: #000;
+  box-sizing: inherit;
+  position: absolute;
+  pointer-events: auto;
+}
+
+.card-blog-2{
+  top: 45%;
+  right: 10%;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 1rem 3rem;
+  color: #000;
+  box-sizing: inherit;
+  position: absolute;
+  pointer-events: auto;
+
+}
+
+.card-blog-3{
+  top: 60%;
+  right: 10%;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 1rem 3rem;
+  color: #000;
+  box-sizing: inherit;
+  position: absolute;
+  pointer-events: auto;
+
+}
+
+.light .card-blog-3{
+  background:#000;
+  color: #f5f5f5;
+}
+
+.light .card-blog-3[data-isOpen="true"] {
+  top: 0%;
+  right: 0%;
+  background:#f5f5f5;
+  color: #000;
+  z-index: 1;
+}
+.dark .card-blog-3[data-isOpen="true"] {
+  top: 0%;
+  right: 0%;
+  background:#000000;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.light .card-blog-1{
+  background:#000;
+  color: #f5f5f5;
+}
+
+.light .card-blog-2{
+  background:#000;
+  color: #f5f5f5;
+}
+
+
+.light .card-blog-1[data-isOpen="true"] {
+  top: 0%;
+  right: 0%;
+  background:#f5f5f5;
+  color: #000;
+  z-index: 1;
+}
+.dark .card-blog-1[data-isOpen="true"] {
+  top: 0%;
+  right: 0%;
+  background:#000000;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.light .card-blog-2[data-isOpen="true"] {
+  top: 0%;
+  right: 0%;
+  background:#f5f5f5;
+  color: #000;
+  z-index: 1;
+}
+.dark .card-blog-2[data-isOpen="true"] {
+  top: 0%;
+  right: 0%;
+  background:#000000;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.card-expand{
+  width: inherit;
+  height: auto;
+  padding: 2% 5% 5% 5%;
+  overflow: scroll; 
+
+}
+.card-blog-1 p{
+  padding-top: 1rem;
+  line-height: 150%;
+  color: #000;
+  align-items: center;
+}
+
+.dark .card-blog-1 p{
+  color:#f5f5f5;
+}
+@media only screen and (min-width: 671px) {
+
+  .card-on-mobile{  
+  display: none;
+  }
 }

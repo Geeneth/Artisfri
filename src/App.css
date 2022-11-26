@@ -30,7 +30,7 @@
   color: var(--text-color);
   background-size: var(--background-size);
   transition: var(--background) 5s ease-out;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 
@@ -41,7 +41,7 @@
   --background: linear-gradient(to right, #ff5f6d, #ff8657, #e2911f);
   --background-size: 400% 400%;
   animation: change 15s ease-in-out infinite;
-  overflow-y: scroll;
+  overflow: hidden;
   transition: var(--background) 5s ease-out;
 }
 
@@ -54,9 +54,10 @@
   --text-color: var(--white);
   --background-size: 400% 400%;
   animation: change 15s ease-in-out infinite;
-  overflow-y: scroll;
+  overflow: hidden;
   transition: var(--background) 5s ease-out;
 }
+
 
 @keyframes change {
   0% {
@@ -80,6 +81,13 @@
   background-position: center;
 }
 
+@media only screen and (max-width: 671px) {
+  .nav-bar {
+    display: none;
+  }
+
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -101,7 +109,11 @@ nav ul li a {
   font-size: 1rem;
   font-weight: bold;
 }
-
+@media only screen and (max-width: 671px) {
+  nav ul li a {
+    font-size: 1.25em;
+  }
+}
 /* Image Logo */
 .App-logo {
   width: 100%;
@@ -110,8 +122,19 @@ nav ul li a {
   background-size: cover;
   background-position: center;
   pointer-events: none;
+
 }
 
+@media only screen and (max-width: 671px) {
+  .App-logo {
+    display: none;
+  }
+  
+}
+.navbar-app-logo {
+  padding-right: 5px;
+
+}
 /* Flex-Box */
 .flex-box {
   display: flex;
@@ -130,6 +153,16 @@ nav ul li a {
   color: whitesmoke;
 }
 
+
+@media only screen and (max-width: 671px) {
+  .home-headers {
+    height: 15vh;
+    font-size: 0.8em;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+}
+
 .btn {
   height: 10%;
   width: 80%;
@@ -145,7 +178,11 @@ nav ul li a {
   text-decoration: none;
   color: black;
 }
-
+@media only screen and (max-width: 671px) {
+  .btn {
+    display: none;
+  }
+}
 .btn:hover {
   background-color: whitesmoke;
   transition: 0.3s;
@@ -233,7 +270,17 @@ nav ul li a {
 .vertical-asset-card-block {
   width: 20%;
 }
-
+@media only screen and (max-width: 850px) {
+  .vertical-asset-card-block:nth-child(4){
+    display: none;
+  }
+  .vertical-asset-card-block:nth-child(2){
+    display: none;
+  }
+  .vertical-asset-card-block {
+    width: 33%;
+  }
+}
 .light #new-arrivals h4 {
   color:rgb(0, 0, 0);
   font-size: 1.5rem;
@@ -393,4 +440,10 @@ nav ul li a:hover:after, #artists a:hover:after, #socials a:hover:after {
 .dark .contact-content a{
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 850px) {
+  .contact-content{
+      flex-direction:column !important;
+  }
 }

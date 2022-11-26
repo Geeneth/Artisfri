@@ -4,7 +4,13 @@ import AssetVerticalCard from "./components/asset-vertical-card";
 import { products } from "./components/database-data";
 import { arrivals } from "./components/new-arrivals";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { useState, createContext } from "react";
+import { useState, createContext, createContext } from "react";
+import DarkMode from "./components/darkmode"
+import { Input, Grid, css, Text, Dropdown  } from "@nextui-org/react";
+import { useEffect } from 'react'
+import React from "react";
+
+
 import DarkMode from "./components/darkmode"
 
 
@@ -20,7 +26,7 @@ function Database() {
       elements[i].style.color = "black";
     }
     //changing the color of the button that was clicked
-    document.getElementById(button).style.backgroundColor = "#121212";
+    document.getElementById(button).style.backgroundColor = "#000";
     document.getElementById(button).style.color = "#FFF";
     if (button === "All") {
       //if the button clicked is "All", then show all the data
@@ -34,11 +40,19 @@ function Database() {
       setData(filtered);
     }
   };
+  useEffect(() => {
+            document.body.style.overflow = "scroll";
+          }, [])
+  
+          
+  const [selected, setSelected] = React.useState(new Set(["Categories"]));
+  const selectedValue = React.useMemo(
+    () => Array.from(selected).join(", ").replaceAll("_", " "),
+    [selected]
+  );
+        
   return (
-    <div id="database-page">    
-      <div className="darkmodebutton">
-        <DarkMode />
-      </div>  
+    <div id="database-page">
       <div className="database-nav-bar">
         <nav className="database-nav">
           {/* <h2 className="full-name">ARTISFRI</h2> */}
@@ -51,20 +65,59 @@ function Database() {
             <li>
               <Link to="/blog">Blog</Link>
             </li>
-         
           </ul>
         </nav>
       </div>
       <div id="search-area">
         <div className="search-bar-container">
-          <input
-            type="text"
-            className="search-bar"
-            placeholder="Search..."
+          <Input
+            weight="bold"
+            className="search-bar"         
+            width="100%"
+            clearable
+            labelPlaceholder="Search"
             onChange={(e) => setQuery(e.target.value.toLowerCase())}
+            helperText="Search for an asset."
+            css={{  $$inputColor: '#262626',
+                    $$inputPlaceholderColor: '#ffc371',
+                    $$inputFontSize: "17px", 
+                    $$inputHelperColor: "#ffc371",
+                    $$inputTextColor: "#ffc371",
+                    $$inputHoverBorderColor: "#ffc371",
+                    $$inputFontWeight: "800",
+                    
+                  }}  
           />
         </div>
-
+        <div className="dropdown">
+          <Dropdown>
+            <Dropdown.Button css={{ 
+              tt: "capitalize",
+              display:"flex",
+              backgroundColor:"#ffc371",
+              color:"black", 
+            }}>
+              {selectedValue}
+            </Dropdown.Button>
+            <Dropdown.Menu
+              aria-label="Single selection actions"
+              color="warning"
+              disallowEmptySelection
+              selectionMode="single"
+              selectedKeys={selected}
+              onSelectionChange={setSelected}
+              onAction={(key) => filter(key)}
+              css={{
+              }}
+            >
+              <Dropdown.Item key="All" >All</Dropdown.Item>
+              <Dropdown.Item key="Furniture">Furniture</Dropdown.Item>
+              <Dropdown.Item key="Environment" >Environment</Dropdown.Item>
+              <Dropdown.Item key="Medieval" >Medieval</Dropdown.Item>
+              <Dropdown.Item key="Industrial" >Industrial</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </div>
         {/* table to store categories section and the models */}
         <table className="database-table-view">
           <tr>

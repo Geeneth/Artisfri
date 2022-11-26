@@ -8,14 +8,12 @@ html .dark{
   background-color: rgb(255, 255, 255);
   padding: 1% 0 1% 0;
   margin-top: 0%;
-  padding-left: 0.75%;
 }
 
 .dark #database-page {
   background-color: #121212;
   padding: 1% 0 1% 0;
   margin-top: 0%;
-  padding-left: 0.75%;
 }
 
 .darkmodebutton{
@@ -131,13 +129,20 @@ html .dark{
   border-radius: 10px;
   text-indent: 15px;
   margin-top: 0.5%;
+  
+}
+
+.dropdown {
+  padding-top: 1%;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .search-bar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ padding-left: 1%;
+ padding-right: 1%;
 }
+
 
 /* Navigation bar styling */
 
@@ -255,4 +260,90 @@ html .dark{
 
 .model-list {
   width: 100%;
+}
+
+.search-bar-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.dropdown {
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+@media only screen and (min-width: 671px){
+  .dropdown {
+    display: none;
+  }
+
+  .search-bar-container {
+    margin-bottom: 1%;
+  }
+
+}
+
+@media only screen and (max-width: 671px) { 
+
+  .search-bar-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 1%;
+  }
+
+  .categories {
+    display: none;
+  }
+
+  .database-table-view{
+    margin-left: 4%;
+  }
+}
+.nextui-c-cVVQUL.nextui-c-PJLV.nextui-c-cVVQUL-crfSce-borderWeight-light.nextui-c-PJLV-gulvcB-isFocusVisible-false.nextui-c-cVVQUL-idYOtdv-css.nextui-popover-content-container.nextui-popover-content-enter.nextui-popover-content-enter-active{
+  border-style: solid;
+}
+
+.light .nextui-c-eXOOPO.nextui-c-eXOOPO-iNKybL-shadow-true.nextui-c-eXOOPO-ccrOPm-underlined-false.nextui-c-eXOOPO-lkBNdM-isTextarea-false.nextui-input-wrapper.nextui-input-wrapper--normal.nextui-input-wrapper--shadow{
+  background-color: rgb(218, 218, 218);
+}
+
+.light .nextui-c-hzQjrs.nextui-c-hzQjrs-hyKnjc-asPlaceholder-true.nextui-input-block-label{
+  color: rgb(0, 0, 0);
+}
+
+.light .nextui-c-cwdhZi.nextui-input-helper-text{
+  color: rgb(0, 0, 0);
+}
+
+/* .dark .nextui-c-eXOOPO.nextui-c-eXOOPO-iNKybL-shadow-true.nextui-c-eXOOPO-ccrOPm-underlined-false.nextui-c-eXOOPO-lkBNdM-isTextarea-false.nextui-input-wrapper.nextui-input-wrapper--normal.nextui-input-wrapper--shadow{
+  background-color: red;
+} */
+/* .nextui-c-jeuecp.nextui-c-jeuecp-bAQXE-focused-true.nextui-input{
+  background-color: red;
+}
+.nextui-c-eXOOPO.nextui-c-eXOOPO-iNKybL-shadow-true.nextui-c-eXOOPO-ccrOPm-underlined-false.nextui-c-eXOOPO-lkBNdM-isTextarea-false.nextui-input-wrapper.nextui-input-wrapper--with-value.nextui-input-wrapper--shadow{
+  background-color: red;
+}
+.nextui-c-iwmZdB.nextui-c-iwmZdB-jTfqsF-helperColor-default.nextui-c-iwmZdB-dpkacN-borderWeight-normal.nextui-c-iwmZdB-gOvjVW-size-md.nextui-c-iwmZdB-ifDbmpe-css.nextui-input-main-container.nextui-input-main-container--hover{
+  background-color: red;
+}
+
+.nextui—c—ghxhhl.nextui—c—ghxhhI—fjttf0—isTextarea—false.nextui—c—ghxhhI—iNKybL—animated—true.nextui—c—ghxhhl—hcQiFN—cv.nextui—input—container.nextui—input—container--hover.nextui—input—container--input.search—bar{
+  background-color: red;
+}
+
+.nextui-c-iwmZdB.nextui-c-iwmZdB-jTfqsF-helperColor-default.nextui-c-iwmZdB-dpkacN-borderWeight-normal.nextui-c-iwmZdB-gOvjVW-size-md.nextui-c-iwmZdB-ifDbmpe-css.nextui-input-main-container.nextui-input-main-container--hover{
+  background-color: red;
+} */
+
+.light .nextui-c-iwmZdB-ifDbmpe-css{
+  --nextui--inputColor: rgb(218, 218, 218) !important;
+}
+
+.light .nextui-c-iwmZdB-ifDbmpe-css {
+  --nextui--inputTextColor: #000;
+}
+
+.light .nextui-c-iwmZdB-ifDbmpe-css {
+  --nextui--inputPlaceholderColor: #000;
 }

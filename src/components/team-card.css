@@ -41,11 +41,20 @@
     width: 500%;
     padding-left: 5%;
 }
-
+@media only screen and (max-width: 671px) {
+    .artist-card{
+        min-width: 105% !important;
+    }
+}
 .artist-name{
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 504px) {
+    #id-2{
+        font-size:  120% ;
+    }
 }
 
 .artist-bio{
@@ -63,10 +72,6 @@
     height: 10%;
 }
 
-
-
-
-
 .team-block{
     display: flex;
     align-items: center;
@@ -74,6 +79,14 @@
     width: 100%;
     padding-top: 10px;
 }
+
+@media only screen and (max-width: 671px) {
+    .team-block{
+        flex-direction: column !important;
+    }
+
+}
+
 
 .light .team-section{
     margin-left: auto;
@@ -88,5 +101,5 @@
     margin-right: auto;
     width: 90%;
     padding-bottom: 5%;
-    border-bottom: #FAFAFA solid 2px;
+    border-bottom: #122F50 solid 2px;
 }

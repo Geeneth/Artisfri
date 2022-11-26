@@ -45,7 +45,7 @@ export const products = [
     description:
       "A very basic tree to add to your 3D environment. Works well with other low poly assets.",
     image: "./assets/dimantha/images/withered-tree-1.png",
-    links: ["tree-1"],
+    links: ["withered-tree-1"],
   },
   {
     category: "Environment",
@@ -100,7 +100,7 @@ export const products = [
     title: "Table",
     description:
       "This is a great table to add to your collection. It can serve very well in creating a set of a room.",
-    image: "./assets/amantha/images/Table_Furniture.jpg",
+    image: "./assets/amantha/images/Table_Furniture.png",
     links: ["table"],
   },
   {
@@ -110,6 +110,14 @@ export const products = [
       "The classic computer table, fits perfectly in any room to facilitate a computer setup.",
     image: "./assets/amantha/images/pc-table.png",
     links: ["pc-table"],
+  },
+  {
+    category: "Furniture",
+    title: "Computer Table 2",
+    description:
+      "Another rendition of a computer table, perfect for your dream gaming setup.",
+    image: "./assets/sheveen/images/pc-table-2.png",
+    links: ["pc-table-2"],
   },
   {
     category: "Industrial",
@@ -158,6 +166,62 @@ export const products = [
       "A beautiful coffee table to add to your collection. It will look fantastic in the set of a living area",
     image: "./assets/sheveen/images/coffee-table.png",
     links: ["coffee-table"],
+  },
+  {
+    category: "Furniture",
+    title: "Cupboard",
+    description:
+      "A simple cupboard that will fit into any room setting.",
+    image: "./assets/sheveen/images/cupboard.png",
+    links: ["cupboard"],
+  },
+  {
+    category: "Furniture",
+    title: "Sofa",
+    description:
+      "A basic sofa that works great in the setting of a living room.",
+    image: "./assets/sheveen/images/sofa.png",
+    links: ["sofa"],
+  },
+  {
+    category: "Furniture",
+    title: "Dining Room Table",
+    description:
+      "A dining room needs a table. This one is a great addition to your collection.",
+    image: "./assets/sheveen/images/dining-room-table.png",
+    links: ["dining-room-table"],
+  },
+  {
+    category: "Furniture",
+    title: "Dining Room Chair",
+    description:
+      "A dining table needs a set of matching chairs.",
+    image: "./assets/sheveen/images/dining-room-chair.png",
+    links: ["dining-room-chair"],
+  },
+  {
+    category: "Furniture",
+    title: "Chest of Drawers",
+    description:
+      "A chest of drawers is a great addition to any room for storing items.",
+    image: "./assets/sheveen/images/chest-of-drawers.png",
+    links: ["chest-of-drawers"],
+  },
+  {
+    category: "Furniture",
+    title: "Fridge",
+    description:
+      "An essential piece of furniture for any kitchen.",
+    image: "./assets/sheveen/images/fridge.png",
+    links: ["fridge"],
+  },
+  {
+    category: "Furniture",
+    title: "Bed",
+    description:
+      "This low-poly bed is a great addition to your bedroom set.",
+    image: "./assets/sheveen/images/bed.png",
+    links: ["bed"],
   },
 ];
 
