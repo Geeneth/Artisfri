@@ -2,44 +2,44 @@
 
 export const arrivals = [
   {
-    category: "Medieval",
-    title: "Throne",
+    category: "Furniture",
+    title: "Fridge",
     description:
-      "An elegant throne to add to your meidieval settings.",
-    image: "./assets/dimantha/images/throne.png",
-    links: ["./assets/dimantha/throne.fbx"],
+      "An essential piece of furniture for any kitchen.",
+    image: "./assets/sheveen/images/fridge.png",
+    links: ["fridge"],
   },
   {
     category: "Furniture",
-    title: "Computer Table",
+    title: "Bed",
     description:
-      "The classic computer table, fits perfectly in any room to facilitate a computer setup.",
-    image: "./assets/amantha/images/pc-table.png",
-    links: ["./assets/amantha/pc-table.fbx"],
-  },
-  {
-    category: "Medieval",
-    title: "Shield",
-    description:
-      "A classic medieval shield to incorporate into your meidieval settings. Defence is the best offence.",
-    image: "./assets/dimantha/images/shield.png",
-    links: ["./assets/dimantha/shield.fbx"],
-  },
-  {
-    category: "Industrial",
-    title: "Industrial Arm",
-    description:
-      "A fundamental industrial arm for your factories or compounds.",
-    image: "./assets/amantha/images/industrial-arm.png",
-    links: ["./assets/amantha/industrial-arm.fbx"],
+      "This low-poly bed is a great addition to your bedroom set.",
+    image: "./assets/sheveen/images/bed.png",
+    links: ["bed"],
   },
   {
     category: "Furniture",
-    title: "Coffee Table",
+    title: "Dining Room Chair",
     description:
-      "A beautiful coffee table to add to your collection. It will look fantastic in the set of a living area",
-    image: "./assets/sheveen/images/coffee-table.png",
-    links: ["./assets/sheveen/coffee-table.mb"],
+      "A dining table needs a set of matching chairs.",
+    image: "./assets/sheveen/images/dining-room-chair.png",
+    links: ["dining-room-chair"],
+  },
+  {
+    category: "Furniture",
+    title: "Computer Table 2",
+    description:
+      "Another rendition of a computer table, perfect for your dream gaming setup.",
+    image: "./assets/sheveen/images/pc-table-2.png",
+    links: ["pc-table-2"],
+  },
+  {
+    category: "Furniture",
+    title: "Chest of Drawers",
+    description:
+      "A chest of drawers is a great addition to any room for storing items.",
+    image: "./assets/sheveen/images/chest-of-drawers.png",
+    links: ["chest-of-drawers"],
   },
 ];
 

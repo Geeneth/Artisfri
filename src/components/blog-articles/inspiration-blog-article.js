@@ -24,9 +24,6 @@ function InspirationBlogArticle(props) {
           transition={{ duration: 1 }}
           className="card-expand"
         >
-          <br />
-          <br />
-          <h3>Inspiration</h3>
           <p>
             The inspiration for Artisfri came from me looking for 3D for a
             personal project. Despite scouring the internet to look for a

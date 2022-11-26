@@ -10,11 +10,11 @@ function UpdateLogBlogArticle(props) {
       transition={{ layout: { duration: 1, type: "spring" } }}
       layout
       onClick={() => setIsOpen(!isOpen)}
-      className="card-blog-2"
+      className="card-blog-3"
       style={{ borderRadius: "1rem" }}
     >
       <motion.h2 layout="position" id="cat-header">
-        Inspiration
+        Update Log
       </motion.h2>
       {isOpen && (
         <motion.div
@@ -24,97 +24,116 @@ function UpdateLogBlogArticle(props) {
           transition={{ duration: 1 }}
           className="card-expand"
         >
-          <br />
-          <br />
-          <h3>Update Log</h3>
           <h2>Artisfri 1.2</h2>
           <strong>Latest Updates:</strong>
           <p>
-            - Optimized website for Mobile View <br/>
-            - Added Dark Mode <br/>
-            - Visual Changes<br/>
-            - New Models<br/>
+            - Optimized Website for Mobile View <br />
+            - Added Dark Mode <br />
+            - Visual Changes
+            <br />
+            - New Models
+            <br />
+            - New Blog Article
+            <br />
           </p>
+          <img
+            className="article-image"
+            src="./images/blog/update-log/1.2-1.png"
+            width="100%"
+            style={{ borderRadius: "1rem" }}
+          />
+          <img
+            className="article-image"
+            src="./images/blog/update-log/1.2-2.png"
+            width="100%"
+            style={{ borderRadius: "1rem" }}
+          />
+          <img
+            className="article-image"
+            src="./images/blog/update-log/1.2-3.png"
+            width="100%"
+            style={{ borderRadius: "1rem" }}
+          />
+          <img
+            className="article-image"
+            src="./images/blog/update-log/1.2-4.png"
+            width="100%"
+            style={{ borderRadius: "1rem" }}
+          />
+          {/* <img
+            className="article-image"
+            src="./images/blog/update-log/test/1.2-1.png"
+            width="100%"
+            // style={{borderRadius: "1rem"}}
+          /> */}
 
           <br />
           <br />
-          <h3>Affordability</h3>
+          <h2>Artisfri 1.1</h2>
+          <strong>Latest Updates:</strong>
           <p>
-            I constantly found awkward pricing schemes and a lack of uniformity.
-            Some simple models are overpriced and some intricate works of art
-            are given out for free. I wanted to make our models affordable,
-            giving users the chance to obtain good quality models at low prices.
-            My team and I are yet to discuss and implement a pricing system.
-            Therefore, as of writing, all the models on our website are free.
-            This may change in the future depending on where the project goes.
+            - Search functionality for models <br />
+            - Categories for models <br />
+            - Blog Page
+            <br />
+            - Visual changes
+            <br />
+            - New Artist
+            <br />
+            - New Models
+            <br />
           </p>
-          <br />
-          <br />
           <img
             className="article-image"
-            src="./images/blog/inspiration/article-image-2.svg"
-            width="80%"
+            src="./images/blog/update-log/1.1-1.png"
+            width="100%"
+          />
+          <img
+            className="article-image"
+            src="./images/blog/update-log/1.1-2.png"
+            width="100%"
+          />
+          <img
+            className="article-image"
+            src="./images/blog/update-log/1.1-3.png"
+            width="100%"
+          />
+          <img
+            className="article-image"
+            src="./images/blog/update-log/1.1-4.png"
+            width="100%"
           />
           <br />
           <br />
-          <h3>Simple Models (Low Polygons)</h3>
+          <h2>Artisfri 1.0</h2>
+          <strong>Latest Updates:</strong>
           <p>
-            I was never able to find a hub for basic 3D models. As someone who
-            wanted to simply step into the realm of game design and look into 3D
-            modelling before hand. The complexity of a lot of pieces displayed
-            on website intimidated me. I could not find the minimalistic type of
-            model I really wanted and got lost in a swarm of high polygon
-            masterpieces. While beautiful to inspect, I definitely did not need
-            a high definition dragon head with individual scales for my little
-            adventure parkour game.
+            Contained the Home Page and the Assets page. The assets page had a
+            small number of models created by our team of artists (Amantha and
+            Dimantha). A separate JavaScript file was used to store all of the
+            models in JSON format. I constructed a system to iterate through
+            this file of models while rendering a card component that contained
+            information about each model. The home page included a section that
+            displayed the latest models that our artists added to the database,
+            along with an “About Us” section to describe what Artisfri provides
+            to users and an area to display information about Artisfri’s team of
+            developers and artists.
           </p>
-          <br />
-          <br />
           <img
             className="article-image"
-            src="./images/blog/inspiration/article-image-3.svg"
-            width="80%"
+            src="./images/blog/update-log/1.0-1.png"
+            width="100%"
           />
-          <br />
-          <br />
-          <h3>Customer Support</h3>
-          <p>
-            A major issue I seemed to find across many platforms for obtaining
-            3D models was that there was simply no customer support. Often, I
-            would see an anonymous user posting their models and not ever
-            answering the pleas for help from the poor souls in the review
-            section having issues implementing it to their project.
-          </p>
-          <br />
-          <br />
           <img
             className="article-image"
-            src="./images/blog/inspiration/article-image-4.svg"
-            width="80%"
+            src="./images/blog/update-log/1.0-2.png"
+            width="100%"
           />
-
-          <br />
-          <br />
-          <h3>Uniformity</h3>
-          <p>
-            Clutter was something I constantly ran into. Too many file types,
-            too many categories and due to the lack of a “simple to complex”
-            filter option, TOO MANY POLYGONS!
-          </p>
-          <br />
-          <br />
           <img
             className="article-image"
-            src="./images/blog/inspiration/article-image-5.svg"
-            width="50%"
+            src="./images/blog/update-log/1.0-3.png"
+            width="100%"
           />
-          <br />
-          <br />
-          <p>
-            So, I hope you enjoy my little project, we will keep updating our
-            website with models and new features. We have a long way to go but
-            with time we hope to be your one-stop shop for all 3D models.
-          </p>
         </motion.div>
       )}
     </motion.div>
