@@ -5,13 +5,11 @@ Artisfri is a platform for creators of all sorts to visit and purchase very affo
 
 ____________________________________________  
 
-Current Version: **Artisfri 1.1**
+Current Version: **Artisfri 1.2**
 <br/><br/>**Latest Updates:**
-<br/>-Search functionality for models
-<br/>-Categories for models
-<br/>-Blog Page
-<br/>-Visual changes
-<br/>-New Artist
+<br/>-Optimized website for Mobile View
+<br/>-Added Dark Mode
+<br/>-Visual Changes
 <br/>-New Models
 ____________________________________________  
 
