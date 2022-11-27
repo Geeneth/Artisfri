@@ -13,7 +13,8 @@ Current Version: **Artisfri 1.2**
 <br/>-New Models
 ____________________________________________  
 
-![](read-me-images/introduction.png)
+<img width="1413" alt="home-page" src="https://user-images.githubusercontent.com/44797747/204152721-2e1661d6-262a-49aa-889a-8707480a4748.png">
+
 
 
 We have a team of verified artists working on each of the models, this ensures consistency of the quality and style of the models produced by each artist. We will also be able to provide better customer support as the customer will be able to contact us directly and not have to reach out to a third-party seller.
