@@ -28,7 +28,7 @@ Whenever our artists release a new batch of models, they will be displayed in ou
 
 <sub>Database Page</sub>  
 
-<img width="1413" alt="new-arrivals" src="https://user-images.githubusercontent.com/44797747/204178756-a65e4550-31f2-4456-b474-4c747fe5efc5.png">
+<img width="1413" alt="new-arrivals" src="https://user-images.githubusercontent.com/44797747/204195280-b57277fb-2d13-4d0f-8205-3783fee08f9e.png">
 
 <sub>New Arrivals Section</sub>
 
