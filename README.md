@@ -22,13 +22,15 @@ We have a team of verified artists working on each of the models, this ensures c
 Whenever our artists release a new batch of models, they will be displayed in our "New Arrivals" section and also be added to our database of all models.
 
 
-<img width="1413" alt="new-arrivals" src="https://user-images.githubusercontent.com/44797747/204178756-a65e4550-31f2-4456-b474-4c747fe5efc5.png">
 
-<sub>New Arrivals Section</sub>
 
 <img width="1413" alt="assets-page" src="https://user-images.githubusercontent.com/44797747/204178779-120080ae-e59d-4f19-bd56-63a1b9426ac1.png">
 
 <sub>Database Page</sub>  
+
+<img width="1413" alt="new-arrivals" src="https://user-images.githubusercontent.com/44797747/204178756-a65e4550-31f2-4456-b474-4c747fe5efc5.png">
+
+<sub>New Arrivals Section</sub>
 
 <img width="1413" alt="blog" src="https://user-images.githubusercontent.com/44797747/204178793-1a57d860-bfa2-4246-aff0-cd5ed7adffa7.png">
 
